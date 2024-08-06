@@ -1,5 +1,6 @@
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
+import Timeline from "@/components/Timeline";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { FaHome } from "react-icons/fa";
 
@@ -14,6 +15,9 @@ export default function Home() {
         />
         <Hero />
         <Grid />
+        {/* add some padding to the bottom */}
+        <div className="h-20" />
+        <Timeline />
       </div>
     </main>
   );
