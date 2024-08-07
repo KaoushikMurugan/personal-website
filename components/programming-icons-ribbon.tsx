@@ -7,11 +7,15 @@ import JavaScriptIcon from './programming-icons/javascript';
 import TypescriptIcon from './programming-icons/typescript';
 import { AnimatePresence, motion } from 'framer-motion';
 import { cn } from "@/lib/utils";
+import CSharpIcon from './programming-icons/csharp';
+import BashIcon from './programming-icons/bash';
+import PyTorchIcon from './programming-icons/pytorch';
+import TensorFlowIcon from './programming-icons/tensorflow';
 
 export const ProgrammingIconsRibbon = ({
   direction = "left",
   speed = "fast",
-  pauseOnHover = true,
+  pauseOnHover = false,
   className,
 }: {
   direction?: "left" | "right";
@@ -19,12 +23,6 @@ export const ProgrammingIconsRibbon = ({
   pauseOnHover?: boolean;
   className?: string;
 }) => {
-
-  const iconProps = {
-    height: 100,
-    width: 100
-  };
-
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
 
@@ -90,50 +88,36 @@ export const ProgrammingIconsRibbon = ({
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
-        {
-          <>
-          <CLangIcon {...iconProps} />
-          <CPlusPlusIcon {...iconProps} />
-          <PythonIcon {...iconProps} />
-          <JavaScriptIcon {...iconProps} />
-          <TypescriptIcon {...iconProps} />
-          </>
-        }
+        <ProgrammingIcons />
       </ul>
+      <div className="h-10" /> {/* Spacer */}
     </div>
   );
 };
 
-// const ProgrammingIconsRibbon = ({ dir } : {dir: 'left' | 'right'}) => {
-//   const variants = {
-//     left: -100,
-//     right: 100,
-//   };
+const ProgrammingIcons = (): JSX.Element => {
+  const iconProps = {
+    height: 80,
+    width: 80
+  };
+  const wideIconProps = {
+    height: iconProps.height,
+    width: iconProps.width * 2
+  }
 
-//   const iconProps = {
-//     height: 100,
-//     width: 100
-//   };
-
-//   return (
-//     <>
-//       <div className="h-10" /> {/* Spacer */}
-//       <AnimatePresence>
-//         <motion.div
-//           className='relative flex justify-center gap-8'
-//           animate={{ x: -100 }}
-//           transition={{
-//             type: "spring",
-//             repeat: Infinity,
-//             stiffness: 260,
-//             damping: 20
-//           }}
-//         >
-//         </motion.div>
-//       </AnimatePresence>
-//       <div className="h-10" /> {/* Spacer */}
-//     </>
-//   )
-// }
+  return (
+    <>
+      <CLangIcon {...iconProps} />
+      <JavaScriptIcon {...iconProps} />
+      <PythonIcon {...iconProps} />
+      <CPlusPlusIcon {...iconProps} />
+      <TypescriptIcon {...iconProps} />
+      <BashIcon {...iconProps} />
+      <CSharpIcon {...iconProps} />
+      <PyTorchIcon {...wideIconProps} />
+      <TensorFlowIcon {...iconProps} /> 
+    </>
+  )
+}
 
 export default ProgrammingIconsRibbon
