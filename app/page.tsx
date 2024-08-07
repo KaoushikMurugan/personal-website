@@ -1,5 +1,5 @@
-import Grid from "@/components/Grid";
-import Hero from "@/components/Hero";
+import Grid from "@/components/grid";
+import Hero from "@/components/hero";
 import Timeline from "@/components/Timeline";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { FaHome } from "react-icons/fa";
