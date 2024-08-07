@@ -1,5 +1,6 @@
 import Grid from "@/components/grid";
 import Hero from "@/components/hero";
+import ProgrammingIconsRibbon from "@/components/programming-icons-ribbon";
 import Timeline from "@/components/timeline";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { FaHome } from "react-icons/fa";
@@ -14,6 +15,7 @@ export default function Home() {
           ]}
         />
         <Hero />
+        <ProgrammingIconsRibbon />
         <Grid />
         {/* add some padding to the bottom */}
         <div className="h-20" />

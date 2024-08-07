@@ -13,6 +13,7 @@ const Timeline = ({
 
   return (
     <section id="timeline">
+      <div className="h-10" /> {/* Spacer */}
       <div
         className={cn(
           "relative grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-2 gap-28 max-w-7xl mx-auto ",
@@ -52,6 +53,7 @@ const Timeline = ({
           })
         }
       </div>
+      <div className="h-10" /> {/* Spacer */}
     </section>
   )
 }
