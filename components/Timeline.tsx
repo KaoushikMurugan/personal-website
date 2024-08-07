@@ -1,6 +1,6 @@
 import { timelineItems } from '@/data'
 import React from 'react'
-import { TimelineItem, TimelineSupport } from './TimelineItem'
+import { TimelineItem, TimelineSupport } from './timeline-item'
 import { cn } from '@/lib/utils';
 
 const Timeline = ({
