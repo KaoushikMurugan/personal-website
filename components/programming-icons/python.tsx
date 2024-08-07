@@ -3,7 +3,7 @@ import React from 'react';
 import { cn } from '@/lib/utils'; 
 export interface IconProps extends React.SVGProps<SVGSVGElement> {} 
 
-const CLangIcon = React.forwardRef<SVGSVGElement, IconProps>(({ className, ...props }, ref) => ( 
+const PythonIcon = React.forwardRef<SVGSVGElement, IconProps>(({ className, ...props }, ref) => ( 
   <svg ref={ref} {...props} 
     className={cn('', className)} 
     viewBox="0 0 128 128"
@@ -13,6 +13,6 @@ const CLangIcon = React.forwardRef<SVGSVGElement, IconProps>(({ className, ...pr
   </svg>
 ));
 
-CLangIcon.displayName = 'CLangIcon';
+PythonIcon.displayName = 'PythonIcon';
 
-export default CLangIcon;
+export default PythonIcon;

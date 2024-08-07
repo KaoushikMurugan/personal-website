@@ -1,6 +1,6 @@
 import React from 'react'
 import CLangIcon from './programming-icons/c'
-import CPlusPusIcon from './programming-icons/cplusplus';
+import CPlusPlusIcon from './programming-icons/cplusplus';
 import PythonIcon from './programming-icons/python';
 import JavaScriptIcon from './programming-icons/javascript';
 import TypescriptIcon from './programming-icons/typescript';
@@ -16,7 +16,7 @@ const ProgrammingIconsRibbon = () => {
       <div className="h-10" /> {/* Spacer */}
       <div className='relative flex justify-center gap-8'>
         <CLangIcon {...iconProps} />
-        <CPlusPusIcon {...iconProps} />
+        <CPlusPlusIcon {...iconProps} />
         <PythonIcon {...iconProps} />
         <JavaScriptIcon {...iconProps} />
         <TypescriptIcon {...iconProps} />

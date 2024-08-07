@@ -3,7 +3,7 @@ import React from 'react';
 import { cn } from '@/lib/utils'; 
 export interface IconProps extends React.SVGProps<SVGSVGElement> {} 
 
-const CLangIcon = React.forwardRef<SVGSVGElement, IconProps>(({ className, ...props }, ref) => ( 
+const CPlusPlusIcon = React.forwardRef<SVGSVGElement, IconProps>(({ className, ...props }, ref) => ( 
   <svg ref={ref} {...props} 
     className={cn('', className)} 
     viewBox="0 0 128 128"
@@ -17,6 +17,6 @@ const CLangIcon = React.forwardRef<SVGSVGElement, IconProps>(({ className, ...pr
   </svg>
 ));
 
-CLangIcon.displayName = 'CLangIcon';
+CPlusPlusIcon.displayName = 'CPlusPlusIcon';
 
-export default CLangIcon;
+export default CPlusPlusIcon;
