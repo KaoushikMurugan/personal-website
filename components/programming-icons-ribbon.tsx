@@ -27,17 +27,21 @@ import ROSIcon from './programming-icons/ros';
 import DockerIcon from './programming-icons/docker';
 import GitIcon from './programming-icons/git';
 import RaspberryPiIcon from './programming-icons/raspberrypi';
+import FirebaseIcon from './programming-icons/firebase';
+import GitHubIcon from './programming-icons/github';
+
+// Modified/Repurposed from https://ui.aceternity.com/components/infinite-moving-cards
 
 export const ProgrammingIconsRibbon = ({
   direction = "left",
   speed = "fast",
-  pauseOnHover = false,
+  slowOnHover = true,
   className,
   children,
 }: {
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
-  pauseOnHover?: boolean;
+  slowOnHover?: boolean;
   className?: string;
   children?: React.ReactNode;
 }) => {
@@ -46,8 +50,11 @@ export const ProgrammingIconsRibbon = ({
 
   useEffect(() => {
     addAnimation();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
   const [start, setStart] = useState(false);
+
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
@@ -64,6 +71,7 @@ export const ProgrammingIconsRibbon = ({
       setStart(true);
     }
   }
+
   const getDirection = () => {
     if (containerRef.current) {
       if (direction === "left") {
@@ -79,6 +87,7 @@ export const ProgrammingIconsRibbon = ({
       }
     }
   };
+
   const getSpeed = () => {
     if (containerRef.current) {
       if (speed === "fast") {
@@ -94,16 +103,19 @@ export const ProgrammingIconsRibbon = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-20  max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        slowOnHover && "translate-x-0 [transition:calc(var(--animation-duration)_*_.1)_ease-out]",
+        (slowOnHover && direction === "left") ? "hover:-translate-x-[10%]" : "hover:translate-x-[10%]",
         className
       )}
     >
       <ul
         ref={scrollerRef}
+        key="scroller" // only cause compiler was complaining about ul requiring a unique key
         className={cn(
           " flex min-w-full shrink-0 gap-8 py-4 w-max flex-nowrap",
           start && "animate-scroll ",
-          pauseOnHover && "hover:[animation-play-state:paused]",
+          slowOnHover && "hover:[animation-play-state:paused]",
           // TODO
           // speed === "fast" && "hover:[animation-duration:40s]",
           // speed === "normal" && "hover:[animation-duration:80s]",
@@ -129,7 +141,7 @@ const ProgrammingIconsRibbonStack = (): JSX.Element => {
 
   return (
     <>
-      <ProgrammingIconsRibbon direction="left" speed="normal">
+      <ProgrammingIconsRibbon direction="left" speed="fast">
         <CLangIcon {...iconProps} />
         <JavaScriptIcon {...iconProps} />
         <PythonIcon {...iconProps} />
@@ -141,9 +153,10 @@ const ProgrammingIconsRibbonStack = (): JSX.Element => {
         <JavaIcon {...iconProps} />
         <CSS3Icon {...iconProps} />
       </ProgrammingIconsRibbon>
-      <ProgrammingIconsRibbon direction="right" speed="slow">
+      <ProgrammingIconsRibbon direction="right" speed="normal">
         <PyTorchIcon {...wideIconProps} />
         <ReactIcon {...iconProps} />
+        <FirebaseIcon {...iconProps} />
         <NumPyIcon {...wideIconProps} />
         <NodeJSIcon {...iconProps} />
         <TensorFlowIcon {...iconProps} />
@@ -151,9 +164,10 @@ const ProgrammingIconsRibbonStack = (): JSX.Element => {
         <PandasIcon {...iconProps} />
         <OpenGLIcon {...iconProps} />
       </ProgrammingIconsRibbon>
-      <ProgrammingIconsRibbon direction="left" speed="normal">
+      <ProgrammingIconsRibbon direction="left" speed="fast">
         <GodotIcon {...iconProps} />
         <GoogleCloudIcon {...iconProps} />
+        <GitHubIcon {...iconProps} />
         <UnityIcon {...wideIconProps} />
         <LinuxIcon {...iconProps} />
         <DockerIcon {...iconProps} />
