@@ -10,7 +10,7 @@ const ROSIcon = React.forwardRef<SVGSVGElement, IconProps>(({ className, ...prop
     fill='none' 
     xmlns='http://www.w3.org/2000/svg'>
     <path style={{
-        fill:"#21304c;",
+        fill:"#21304c",
         fillOpacity:1,
         fillRule:"nonzero",
         stroke:"none"
