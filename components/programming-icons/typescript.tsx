@@ -3,7 +3,7 @@ import React from 'react';
 import { cn } from '@/lib/utils'; 
 export interface IconProps extends React.SVGProps<SVGSVGElement> {} 
 
-const TypescriptIcon = React.forwardRef<SVGSVGElement, IconProps>(({ className, ...props }, ref) => ( 
+const TypeScriptIcon = React.forwardRef<SVGSVGElement, IconProps>(({ className, ...props }, ref) => ( 
   <svg ref={ref} {...props} 
     className={cn('', className)} 
     viewBox="0 0 128 128"
@@ -13,6 +13,6 @@ const TypescriptIcon = React.forwardRef<SVGSVGElement, IconProps>(({ className, 
   </svg>
 ));
 
-TypescriptIcon.displayName = 'TypescriptIcon';
+TypeScriptIcon.displayName = 'TypeScriptIcon';
 
-export default TypescriptIcon;
+export default TypeScriptIcon;

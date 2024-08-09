@@ -1,34 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react'
-import CLangIcon from './programming-icons/c'
-import CPlusPlusIcon from './programming-icons/cplusplus';
-import PythonIcon from './programming-icons/python';
-import JavaScriptIcon from './programming-icons/javascript';
-import TypescriptIcon from './programming-icons/typescript';
 import { cn } from "@/lib/utils";
-import CSharpIcon from './programming-icons/csharp';
-import BashIcon from './programming-icons/bash';
-import PyTorchIcon from './programming-icons/pytorch';
-import TensorFlowIcon from './programming-icons/tensorflow';
-import HTML5Icon from './programming-icons/html5';
-import NumPyIcon from './programming-icons/numpy';
-import CSS3Icon from './programming-icons/css3';
-import PandasIcon from './programming-icons/pandas';
-import NodeJSIcon from './programming-icons/nodejs';
-import ReactIcon from './programming-icons/react';
-import NextJSIcon from './programming-icons/nextjs';
-import GoogleCloudIcon from './programming-icons/googlecloud';
-import JavaIcon from './programming-icons/java';
-import GodotIcon from './programming-icons/godot';
-import UnityIcon from './programming-icons/unity';
-import LinuxIcon from './programming-icons/linux';
-import OpenGLIcon from './programming-icons/opengl';
-import ROSIcon from './programming-icons/ros';
-import DockerIcon from './programming-icons/docker';
-import GitIcon from './programming-icons/git';
-import RaspberryPiIcon from './programming-icons/raspberrypi';
-import FirebaseIcon from './programming-icons/firebase';
-import GitHubIcon from './programming-icons/github';
+import * as Icons from '@/components/programming-icons';
 
 // Modified/Repurposed from https://ui.aceternity.com/components/infinite-moving-cards
 
@@ -142,38 +115,39 @@ const ProgrammingIconsRibbonStack = (): JSX.Element => {
   return (
     <>
       <ProgrammingIconsRibbon direction="left" speed="fast">
-        <CLangIcon {...iconProps} />
-        <JavaScriptIcon {...iconProps} />
-        <PythonIcon {...iconProps} />
-        <CPlusPlusIcon {...iconProps} />
-        <TypescriptIcon {...iconProps} />
-        <HTML5Icon {...iconProps} />
-        <BashIcon {...iconProps} />
-        <CSharpIcon {...iconProps} />
-        <JavaIcon {...iconProps} />
-        <CSS3Icon {...iconProps} />
+        <Icons.CLang {...iconProps} />
+        <Icons.JavaScript {...iconProps} />
+        <Icons.Python {...iconProps} />
+        <Icons.CPlusPlus {...iconProps} />
+        <Icons.TypeScript {...iconProps} />
+        <Icons.HTML5 {...iconProps} />
+        <Icons.Bash {...iconProps} />
+        <Icons.CSharp {...iconProps} />
+        <Icons.Java {...iconProps} />
+        <Icons.CSS3 {...iconProps} />
       </ProgrammingIconsRibbon>
       <ProgrammingIconsRibbon direction="right" speed="normal">
-        <PyTorchIcon {...wideIconProps} />
-        <ReactIcon {...iconProps} />
-        <FirebaseIcon {...iconProps} />
-        <NumPyIcon {...wideIconProps} />
-        <NodeJSIcon {...iconProps} />
-        <TensorFlowIcon {...iconProps} />
-        <NextJSIcon {...wideIconProps} />
-        <PandasIcon {...iconProps} />
-        <OpenGLIcon {...iconProps} />
+        <Icons.PyTorch {...wideIconProps} />
+        <Icons.React {...iconProps} />
+        <Icons.Firebase {...iconProps} />
+        <Icons.NumPy {...wideIconProps} />
+        <Icons.AWS {...iconProps} />
+        <Icons.NodeJS {...iconProps} />
+        <Icons.TensorFlow {...iconProps} />
+        <Icons.NextJS {...wideIconProps} />
+        <Icons.Pandas {...iconProps} />
+        <Icons.Tailwind {...iconProps} />
       </ProgrammingIconsRibbon>
       <ProgrammingIconsRibbon direction="left" speed="fast">
-        <GodotIcon {...iconProps} />
-        <GoogleCloudIcon {...iconProps} />
-        <GitHubIcon {...iconProps} />
-        <UnityIcon {...wideIconProps} />
-        <LinuxIcon {...iconProps} />
-        <DockerIcon {...iconProps} />
-        <GitIcon {...iconProps} />
-        <RaspberryPiIcon {...iconProps} />
-        <ROSIcon {...wideIconProps} />
+        <Icons.Godot {...iconProps} />
+        <Icons.GoogleCloud {...iconProps} />
+        <Icons.GitHub {...iconProps} />
+        <Icons.Unity {...wideIconProps} />
+        <Icons.Linux {...iconProps} />
+        <Icons.Docker {...iconProps} />
+        <Icons.Git {...iconProps} />
+        <Icons.RaspberryPi {...iconProps} />
+        <Icons.ROS {...wideIconProps} />
       </ProgrammingIconsRibbon>
     </>
 
