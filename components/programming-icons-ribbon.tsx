@@ -140,8 +140,8 @@ const ProgrammingIconsRibbonStack = (): JSX.Element => {
       </ProgrammingIconsRibbon>
       <ProgrammingIconsRibbon direction="left" speed="fast">
         <Icons.Godot {...iconProps} />
-        <Icons.GoogleCloud {...iconProps} />
         <Icons.GitHub {...iconProps} />
+        <Icons.GoogleCloud {...iconProps} />
         <Icons.Unity {...wideIconProps} />
         <Icons.Linux {...iconProps} />
         <Icons.Docker {...iconProps} />

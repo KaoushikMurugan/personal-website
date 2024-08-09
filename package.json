@@ -26,7 +26,6 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@types/json5": "^2.2.0",
     "@types/node": "^20.14.14",
     "@types/prop-types": "^15.7.12",
     "@types/react": "^18.3.3",
