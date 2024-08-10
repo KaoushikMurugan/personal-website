@@ -10,13 +10,16 @@ const Timeline = ({
 }) => {
 
   const line_color = 'bg-violet-400'
+  const rowHieght = 20
+  const rowGap = 7
 
   return (
+
     <section id="timeline">
       <div className="h-10" /> {/* Spacer */}
       <div
         className={cn(
-          "relative grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-2 gap-28 max-w-7xl mx-auto ",
+          `relative grid md:auto-rows-[${rowHieght}rem] grid-cols-1 md:grid-cols-2 gap-[${rowGap}rem] max-w-7xl mx-auto`,
           className
         )}
       >
@@ -29,10 +32,10 @@ const Timeline = ({
             }
           })
         }
-        <div className={`absolute inset-0 w-1 ${line_color} left-1/2 transform -translate-x-1/2 z-0 top-36 bottom-36`}></div>
+        <div className={`absolute inset-0 w-1 ${line_color} left-1/2 transform -translate-x-1/2 z-0 top-[${rowHieght*0.5}rem] bottom-[${rowHieght*0.5}rem]`}></div>
         {
           timelineItems.map((item, index) => {
-            const topPosition = 9 + index * 25; // 9 = 0.5*height of div + index * (height of div + gap)
+            const topPosition = 0.5*rowHieght + index * (rowHieght + rowGap); // 0.5*height of div + index * (height of div + gap)
             if (index % 2 === 0) {
               return (
                 <div
