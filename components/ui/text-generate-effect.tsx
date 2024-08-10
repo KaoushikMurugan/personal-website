@@ -8,11 +8,13 @@ export const TextGenerateEffect = ({
   className,
   filter = true,
   duration = 0.5,
+  colorGradient = [],
 }: {
   words: string;
   className?: string;
   filter?: boolean;
   duration?: number;
+  colorGradient?: string[];
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
@@ -37,7 +39,7 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              className={`text-orange-200 opacity-0`}
+              className={`bg-gradient-to-r ${idx < colorGradient.length ? colorGradient[idx] : ""} bg-clip-text text-7xl text-transparent opacity-10`}
               style={{
                 filter: filter ? "blur(10px)" : "none",
               }}
