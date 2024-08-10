@@ -10,8 +10,15 @@ const Timeline = ({
 }) => {
 
   const line_color = 'bg-violet-400'
-  const rowHieght = 20
+  const rowHeight = 20
   const rowGap = 7
+
+  // You have to manually change this for now:
+  //                                V = rowGap          V = rowHeight
+  const timelineCustomClass = `gap-[7rem] md:auto-rows-[20rem]`
+
+  //      both = rowHeight/2            V              V
+  const timelineItemCustomClass = `top-[10rem] bottom-[10rem]`
 
   return (
 
@@ -19,7 +26,7 @@ const Timeline = ({
       <div className="h-10" /> {/* Spacer */}
       <div
         className={cn(
-          `relative grid md:auto-rows-[${rowHieght}rem] grid-cols-1 md:grid-cols-2 gap-[${rowGap}rem] max-w-7xl mx-auto`,
+          `relative grid ${timelineCustomClass} grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto`,
           className
         )}
       >
@@ -32,10 +39,10 @@ const Timeline = ({
             }
           })
         }
-        <div className={`absolute inset-0 w-1 ${line_color} left-1/2 transform -translate-x-1/2 z-0 top-[${rowHieght*0.5}rem] bottom-[${rowHieght*0.5}rem]`}></div>
+        <div className={`absolute inset-0 w-1 ${line_color} left-1/2 transform -translate-x-1/2 z-0 ${timelineItemCustomClass}`}></div>
         {
           timelineItems.map((item, index) => {
-            const topPosition = 0.5*rowHieght + index * (rowHieght + rowGap); // 0.5*height of div + index * (height of div + gap)
+            const topPosition = 0.5*rowHeight + index * (rowHeight + rowGap); // 0.5*height of div + index * (height of div + gap)
             if (index % 2 === 0) {
               return (
                 <div
