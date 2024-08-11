@@ -1,4 +1,7 @@
+import Connect4 from "./timeline-items/Connect4"
+import CSTutoring from "./timeline-items/CSTutoring"
 import DeepCubeX from "./timeline-items/DeepCubeX"
+import F1Tenth from "./timeline-items/F1Tenth"
 import timelineItem from "./timeline-items/types"
 import YABOB from "./timeline-items/YABOB"
 
@@ -11,5 +14,8 @@ export const gridItems = [
 
 export const timelineItems : timelineItem[] = [
     DeepCubeX,
-    YABOB
+    YABOB,
+    F1Tenth,
+    CSTutoring,
+    Connect4,
 ]

@@ -12,7 +12,7 @@ const DeepCubeXTitle = () => {
 
 const DeepCubeXDescription = () => {
     return (
-        <div className="size-48">
+        <div className="relative justify-center size-48 ">
             <Image
                 src="https://cube.rider.biz/visualcube.php?fmt=svg&size=1024&alg=BR2FU2B%27L2B2R2D2LF2D%27U2L2B%27F%27DRUB%27&bg=t"
                 alt="Scrambled Rubik's Cube."
@@ -28,13 +28,13 @@ const DeepCubeXDescription = () => {
 const DeepCubeXSupportTitle = () => {
     return (
         <div>
-            <div className="font-extralight text-2xl">
+            <div className="font-extralight text-3xl">
                 March 2024 - Present
             </div>
-            <br />
-            <i className="font-normal">
+            <i className="font-normal text-xl">
                 Undergraduate Researcher at Davidson Lab, UC Davis
             </i> 
+            <br />
         </div>
     )
 }
@@ -42,11 +42,11 @@ const DeepCubeXSupportTitle = () => {
 const DeepCubeXSupportDescription = () => {
     return (
         <div>
-            <div className="font-light text-md">
+            <div className="font-light text-lg">
                 A research project building upon DeepCubeA, which uses Deep Q-Learning and IDA* to solve a cube with no prior knowledge. Research focusing on training the model to learn like a human, and using domain knowledge to improve performance.
             </div>
 
-            <div className="font-semibold text-md">
+            <div className="font-semibold text-lg">
                 <br />
                 <b>Technologies:</b> Python, C++, PyTorch, Numpy
             </div>

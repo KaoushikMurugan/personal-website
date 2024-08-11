@@ -3,6 +3,7 @@ import Hero from "@/components/hero";
 import ProgrammingIconsRibbon from "@/components/programming-icons-ribbon";
 import Timeline from "@/components/timeline";
 import { FloatingNav } from "@/components/ui/floating-navbar";
+import { timelineItems } from "@/data";
 import { FaHome } from "react-icons/fa";
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
         <Grid />
         {/* add some padding to the bottom */}
         <div className="h-20" />
-        <Timeline />
+        <Timeline timelineItems={timelineItems}/>
       </div>
     </main>
   );

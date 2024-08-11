@@ -22,10 +22,10 @@ const YABOBDescription = () => {
 const YABOBSupportTitle = () => {
     return (
         <div>
-            <div className="font-extralight text-2xl">
+            <div className="font-extralight text-3xl">
                 March 2022 - Present
             </div>
-            <i className="font-normal">
+            <i className="font-normal text-xl">
                 Lead Developer
             </i> 
             <br />
@@ -36,14 +36,14 @@ const YABOBSupportTitle = () => {
 const YABOBSupportDescription = () => {
     return (
         <div>
-            <div className="font-light text-md">
+            <div className="font-light text-lg">
                 An open-source, feature-rich Discord bot that automates the process of scheduling office hours for professors and TAs. Making queueing process more accessible for <span className="font-bold text-yellow-500">hundreds</span> of students to join a queue for a course with the simple press of a button, and having upcoming sessions (from a calendar) displayed in the channel.
                 <br/>
             </div>
 
-            <div className="font-semibold text-md">
+            <div className="font-semibold text-lg">
                 <br />
-                <b>Technologies:</b> TypeScript, node.js, Discord.js, Firebase, Google Cloud, AWS
+                <b>Technologies:</b> TypeScript, node.js, Discord.js, Firebase, Google Cloud API, AWS EC2
             </div>
 
             <br />

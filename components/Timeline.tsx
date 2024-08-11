@@ -1,24 +1,26 @@
-import { timelineItems } from '@/data'
 import React from 'react'
 import { TimelineItem, TimelineSupport } from './timeline-item'
 import { cn } from '@/lib/utils';
+import timelineItem from '@/data/timeline-items/types';
 
 const Timeline = ({
   className,
+  timelineItems
 }: {
   className?: string;
+  timelineItems: timelineItem[]
 }) => {
 
   const line_color = 'bg-violet-400'
-  const rowHeight = 20
+  const rowHeight = 25
   const rowGap = 7
 
   // You have to manually change this for now:
   //                                V = rowGap          V = rowHeight
-  const timelineCustomClass = `gap-[7rem] md:auto-rows-[20rem]`
+  const timelineCustomClass = `gap-[7rem] md:auto-rows-[25rem]`
 
   //      both = rowHeight/2            V              V
-  const timelineItemCustomClass = `top-[10rem] bottom-[10rem]`
+  const timelineItemCustomClass = `top-[12.5rem] bottom-[12.5rem]`
 
   return (
 
