@@ -59,7 +59,7 @@ const Connect4SupportDescription = () => {
                     <i className="bi bi-github ">
                     </i>
                 </a>
-                <a href="https://youtu.be/_yJF8NcShj4" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.youtube.com/watch?v=_yJF8NcShj4" target="_blank" rel="noopener noreferrer">
                     <i className="bi bi-youtube"></i>
                 </a>
             </div>

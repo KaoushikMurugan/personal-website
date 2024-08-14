@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import timelineItem from './types'
 import Image from 'next/image'
 import ArchitectureDiagram from "../../public/F1Tenth_Architecture_darkmode.png"
@@ -44,7 +44,7 @@ const F1TenthSupportDescription = () => {
     return (
         <div>
             <div className="font-light text-lg">
-                Developer on UC Davis F1Tenth's Computer Vision Team, as part of Senior Capstone Project. Researched and incorporated mapping (SLAM), race-line optimzation, path following (pure-pursuit) and obstacle avoidance algorithms in Python and C++, on ROS2. Utilized Docker for simulations and testing with PyTest and Google Test. Presented at UC Davis End of Year Engineering Showcase.
+                Developer on UC Davis F1Tenth&apos;s Computer Vision Team, as part of Senior Capstone Project. Researched and incorporated mapping (SLAM), race-line optimzation, path following (pure-pursuit) and obstacle avoidance algorithms in Python and C++, on ROS2. Utilized Docker for simulations and testing with PyTest and Google Test. Presented at UC Davis End of Year Engineering Showcase.
             </div>
 
             <div className="font-semibold text-lg">
