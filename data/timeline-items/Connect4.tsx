@@ -13,7 +13,7 @@ const Connect4Title = () => {
 
 const Connect4Description = () => {
     return (
-        <div className="relative justify-center w-auto">
+        <div className="relative justify-center align-middle w-auto">
             <Image
                 src={GameplayImage}
                 alt="Gameplay of Connect4 on Embedded Systems."
@@ -70,10 +70,10 @@ const Connect4SupportDescription = () => {
 const Connect4: timelineItem = {
     title: <Connect4Title />,
     description: <Connect4Description />,
-    id: 1,
+    id: 5,
     supportTitle: <Connect4SupportTitle />,
     supportDescription: <Connect4SupportDescription />,
-    supportId: 1,
+    supportId: 105,
 }
 
 export default Connect4

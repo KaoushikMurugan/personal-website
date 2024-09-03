@@ -52,10 +52,10 @@ const CSTutoringSupportDescription = () => {
 const CSTutoring: timelineItem = {
     title: <CSTutoringTitle />,
     description: <CSTutoringDescription />,
-    id: 1,
+    id: 4,
     supportTitle: <CSTutoringSupportTitle />,
     supportDescription: <CSTutoringSupportDescription />,
-    supportId: 1,
+    supportId: 104,
 }
 
 export default CSTutoring

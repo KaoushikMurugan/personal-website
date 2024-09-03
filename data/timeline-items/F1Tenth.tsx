@@ -13,7 +13,7 @@ const F1TenthTitle = () => {
 
 const F1TenthDescription = () => {
     return (
-        <div className="flex justify-center">
+        <div className="flex justify-center align-middle">
             <Image
                 src={ArchitectureDiagram}
                 alt="Architecture Diagram for F1Tenth Computer Vision."
@@ -73,10 +73,10 @@ const F1TenthSupportDescription = () => {
 const F1Tenth: timelineItem = {
     title: <F1TenthTitle />,
     description: <F1TenthDescription />,
-    id: 1,
+    id: 3,
     supportTitle: <F1TenthSupportTitle />,
     supportDescription: <F1TenthSupportDescription />,
-    supportId: 1,
+    supportId: 103,
 }
 
 export default F1Tenth

@@ -64,10 +64,10 @@ const YABOBSupportDescription = () => {
 const YABOB: timelineItem = {
     title: <YABOBTitle />,
     description: <YABOBDescription />,
-    id: 1,
+    id: 2,
     supportTitle: <YABOBSupportTitle />,
     supportDescription: <YABOBSupportDescription />,
-    supportId: 1,
+    supportId: 102,
 }
 
 export default YABOB

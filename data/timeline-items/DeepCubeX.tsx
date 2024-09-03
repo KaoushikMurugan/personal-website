@@ -12,7 +12,7 @@ const DeepCubeXTitle = () => {
 
 const DeepCubeXDescription = () => {
     return (
-        <div className="relative justify-center size-48 ">
+        <div className="relative justify-center align-middle size-48 ">
             <Image
                 src="https://cube.rider.biz/visualcube.php?fmt=svg&size=1024&alg=BR2FU2B%27L2B2R2D2LF2D%27U2L2B%27F%27DRUB%27&bg=t"
                 alt="Scrambled Rubik's Cube."
@@ -60,7 +60,7 @@ const DeepCubeX: timelineItem = {
     id: 1,
     supportTitle: <DeepCubeXSupportTitle />,
     supportDescription: <DeepCubeXSupportDescription />,
-    supportId: 1,
+    supportId: 101,
 }
 
 export default DeepCubeX
