@@ -3,7 +3,7 @@ import { TextGenerateEffect } from './ui/text-generate-effect'
 import { Spotlight } from './ui/spotlight'
 import MagicButton from './buttons/magic-button'
 import { FaLocationArrow } from 'react-icons/fa6'
-import CLangIcon from './programming-icons/c'
+import { SocialIcon } from './social-icons'
 
 const Hero = () => {
   return (
@@ -56,16 +56,17 @@ const Hero = () => {
           </a>
           <div className="flex justify-center items-center h-10"/>
           <div className="flex relative justify-center items-center gap-10 text-5xl">
-            <span className="text-3xl">Connect with me!</span>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/KaoushikMurugan">
-              <i className="bi bi-github"></i>
-            </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kaoushikmurugan/">
-              <i className="bi bi-linkedin"></i>
-            </a>
-            <a>
-              
-            </a>
+            <span className="text-3xl ">Connect with me!</span>
+              <SocialIcon 
+                platform="github" 
+                link="https://github.com/KaoushikMurugan" 
+                className="text-neutral-300"
+              />
+              <SocialIcon 
+                platform="linkedin" 
+                link="https://www.linkedin.com/in/kaoushikmurugan/" 
+                className="text-neutral-300"
+              />
           </div>
         </div>
       </div>
