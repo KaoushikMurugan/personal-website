@@ -15,11 +15,11 @@ const Timeline = ({
 }) => {
 
   const line_color = 'bg-violet-400'
-  const defaultRowHeight = 25
+  const defaultRowHeight = 28
   const defaultColumnWidth = 36
   const defaultMobileColumnWidth = 56
   const defaultRowGap = 7
-  const growthFactor = 1.2
+  const growthFactor = 0.8
 
   const [mobile, setMobile] = useState(false);
   const [rowHeight, setBoxHeight] = useState(defaultRowHeight);
@@ -34,7 +34,6 @@ const Timeline = ({
       const newHeight = isMobile ? defaultRowHeight*(defaultMobileColumnWidth)/(defaultMobileColumnWidth - growthFactor * mobileDeltaW) : 
       width < 1400 ? defaultRowHeight*(defaultColumnWidth)/(defaultColumnWidth - growthFactor * deltaW) : defaultRowHeight;
       setMobile(isMobile);
-      console.log(newHeight);
       setBoxHeight(newHeight);
       setBoxHeightString(`${newHeight}rem`);
     };
@@ -61,13 +60,13 @@ const Timeline = ({
       >
         {
           mobile
-          ? timelineItems.map((item, index) => RightIntentItem(item, boxHeightString))
+          ? timelineItems.map((item, index) => RightIntentItem(item))
           : (
             timelineItems.map((item, index) => {
               if (index % 2 === 0) {
-                return LeftIndentItem(item, boxHeightString)
+                return LeftIndentItem(item)
               } else {
-                return RightIntentItem(item, boxHeightString)
+                return RightIntentItem(item)
               }
             })
           )
@@ -110,15 +109,14 @@ const Timeline = ({
   )
 }
 
-function LeftIndentItem(item: timelineItem, boxHeight: string) {
+function LeftIndentItem(item: timelineItem) {
   return <>
     <TimelineItem
       key={item.id}
       title={item.title}
       description={item.description}
       id={item.id}
-      className='z-10'
-      height={boxHeight} // Pass calculated height
+      className='z-10 align-middle'
     />
     <TimelineSupport
       key={item.supportId}
@@ -126,12 +124,11 @@ function LeftIndentItem(item: timelineItem, boxHeight: string) {
       description={item.supportDescription}
       id={item.supportId}
       className='z-10'
-      height={boxHeight} // Pass calculated height
     />
   </>
 }
 
-function RightIntentItem(item: timelineItem, boxHeight: string) {
+function RightIntentItem(item: timelineItem) {
   return <>
     <TimelineSupport
       key={item.supportId}
@@ -139,15 +136,13 @@ function RightIntentItem(item: timelineItem, boxHeight: string) {
       description={item.supportDescription}
       id={item.supportId}
       className='z-10'
-      height={boxHeight} // Pass calculated height
     />
     <TimelineItem
       key={item.id}
       title={item.title}
       description={item.description}
       id={item.id}
-      className='z-10'
-      height={boxHeight} // Pass calculated height
+      className='z-10 align-middle'
     />
   </>
 }
