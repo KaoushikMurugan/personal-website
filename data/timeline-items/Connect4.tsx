@@ -2,6 +2,9 @@ import React from 'react'
 import timelineItem from './types'
 import Image from 'next/image'
 import GameplayImage from "../../public/Connect4GameplayImage.png"
+import { SocialIcon } from '@/components/social-icons'
+import { AccentText } from '@/components/timeline-item'
+import ExpandableImage from '@/components/expandable-image'
 
 const Connect4Title = () => {
   return (
@@ -13,14 +16,13 @@ const Connect4Title = () => {
 
 const Connect4Description = () => {
     return (
-        <div className="relative justify-center align-middle w-auto">
-            <Image
+        <div className="flex justify-center align-middle">
+            <ExpandableImage
                 src={GameplayImage}
                 alt="Gameplay of Connect4 on Embedded Systems."
                 width={3456}
                 height={1944}
-                layout="responsive"
-                className="rounded-lg"
+                className="rounded-lg w-full max-w-[550px] object-contain"
             />
         </div>
     )
@@ -43,25 +45,23 @@ const Connect4SupportTitle = () => {
 const Connect4SupportDescription = () => {
     return (
         <div>
-            <div className="font-light text-lg">
-            Built an online multiplayer Connect-4 game on TI CC3200 boards with an AWS EC2 server managing game state. Designed GPIO input circuits using IR sensors and SPI for OLED display. Used AWS IoT services for board communication via MQTT and REST, programming the clients in Embedded C and the server in TypeScript and Node.js.
+            <div className="font-light text-lg space-y-2">
+                <p>Built an online multiplayer Connect-4 game on <AccentText text="TI CC3200"/> boards with an <AccentText text="AWS EC2"/> server managing game state.</p>
+                <ul className="list-disc list-inside pl-4">
+                    <li key="40001">Designed <AccentText text="GPIO"/> input circuits using IR sensors and <AccentText text="SPI"/> for OLED display.</li>
+                    <li key="40002">Used <AccentText text="AWS IoT"/> for board communication via <AccentText text="MQTT and REST"/>.</li>
+                </ul>
+                <p>Programmed clients in Embedded C and the server in TypeScript.</p>
             </div>
 
-            <div className="font-semibold text-lg">
-                <br />
-                <b>Technologies:</b> Embedded C, Typescript, node.js, AWS IoT, AWS EC2, TI CC3200, SPI, MQTT, REST
+            <div className="font-semibold text-lg mt-4">
+                <b>Technologies:</b> Embedded C, TypeScript, Node.js, AWS IoT, AWS EC2, TI CC3200, SPI, MQTT, REST
             </div>
-
             <br />
 
-            <div className="flex relative justify-center gap-10 text-5xl">
-                <a href="https://github.com/KaoushikMurugan/Connect-4-on-Embedded-Systems" target="_blank" rel="noopener noreferrer"> 
-                    <i className="bi bi-github ">
-                    </i>
-                </a>
-                <a href="https://www.youtube.com/watch?v=_yJF8NcShj4" target="_blank" rel="noopener noreferrer">
-                    <i className="bi bi-youtube"></i>
-                </a>
+            <div className="flex justify-center gap-10">
+                <SocialIcon platform="github" link="https://github.com/KaoushikMurugan/Connect-4-on-Embedded-Systems" />
+                <SocialIcon platform="youtube" link="https://www.youtube.com/watch?v=_yJF8NcShj4" />
             </div>
         </div>
     )

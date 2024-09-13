@@ -1,7 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import timelineItem from './types'
 import Image from 'next/image'
 import ArchitectureDiagram from "../../public/F1Tenth_Architecture_darkmode.png"
+import { SocialIcon } from '@/components/social-icons'
+import { AccentText } from '@/components/timeline-item'
+import ExpandableImage from '@/components/expandable-image'
 
 const F1TenthTitle = () => {
   return (
@@ -13,14 +16,13 @@ const F1TenthTitle = () => {
 
 const F1TenthDescription = () => {
     return (
-        <div className="flex justify-center align-middle">
-            <Image
+        <div className="flex justify-center items-center">
+            <ExpandableImage
                 src={ArchitectureDiagram}
                 alt="Architecture Diagram for F1Tenth Computer Vision."
-                width={1000}
-                height={1000}
-                layout="responsive"
-                className="rounded-lg w-5 h-5"
+                width={4166}
+                height={2287}
+                className="rounded-lg w-full max-w-[550px] object-contain mx-auto" // Added mx-auto for centering
             />
         </div>
     )
@@ -42,33 +44,29 @@ const F1TenthSupportTitle = () => {
 
 const F1TenthSupportDescription = () => {
     return (
-        <div>
-            <div className="font-light text-lg">
-                Developer on UC Davis F1Tenth&apos;s Computer Vision Team, as part of Senior Capstone Project. Researched and incorporated mapping (SLAM), race-line optimzation, path following (pure-pursuit) and obstacle avoidance algorithms in Python and C++, on ROS2. Utilized Docker for simulations and testing with PyTest and Google Test. Presented at UC Davis End of Year Engineering Showcase.
+        <div className="align-middle">
+            <div className="font-light text-lg space-y-2">
+                <p>Developer on <AccentText text="UC Davis F1Tenth&apos;s Computer Vision Team"/> for Senior Capstone.</p>
+                <ul className="list-disc list-inside pl-4">
+                    <li key="50001">Implemented <AccentText text="SLAM, race-line optimization, and path-following (pure-pursuit)."/></li>
+                    <li key="50002">Integrated obstacle avoidance algorithms, <AccentText text="reducing collision rates by 5%."/></li>
+                    <li key="50003">Used Docker for simulations and testing with PyTest and Google Test.</li>
+                </ul>
             </div>
 
-            <div className="font-semibold text-lg">
-                <br />
+            <div className="font-semibold text-lg mt-4">
                 <b>Technologies:</b> ROS2, Docker, Python, C++, PyTest, Google Test
             </div>
-
             <br />
 
-            <div className="flex relative justify-center gap-10 text-5xl">
-                <a href="https://github.com/ian-chuang/f1tenth_gym_ros" target="_blank" rel="noopener noreferrer"> 
-                    <i className="bi bi-github ">
-                    </i>
-                </a>
-                <a href="https://www.youtube.com/watch?v=IEvM3ufXBYI" target="_blank" rel="noopener noreferrer">
-                    <i className="bi bi-youtube"></i>
-                </a>
-                <a href="https://www.linkedin.com/posts/erikc1_teamwork-makes-the-dreamwork-we-had-a-activity-7207041546095874049-zK1V?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
-                    <i className="bi bi-linkedin"></i>
-                </a>
+            <div className="flex justify-center gap-10">
+                <SocialIcon platform="github" link="https://github.com/ian-chuang/f1tenth_gym_ros" />
+                <SocialIcon platform="youtube" link="https://www.youtube.com/watch?v=IEvM3ufXBYI" />
+                <SocialIcon platform="linkedin" link="https://www.linkedin.com/posts/erikc1_teamwork-makes-the-dreamwork-we-had-a-activity-7207041546095874049-zK1V?utm_source=share&utm_medium=member_desktop" />
             </div>
         </div>
-    )
-}
+    );
+};
 
 const F1Tenth: timelineItem = {
     title: <F1TenthTitle />,

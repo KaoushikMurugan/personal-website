@@ -1,20 +1,34 @@
 import React from 'react'
 import timelineItem from './types'
 import Image from 'next/image'
-import { Icon } from 'lucide-react'
+import { SocialIcon } from '@/components/social-icons' // Correct import for SocialIcon
+import { AccentText } from '@/components/timeline-item'
+import YABOBFeaturesImage from "../../public/YABOB_Features.png"
+import ExpandableImage from '@/components/expandable-image'
 
 const YABOBTitle = () => {
   return (
     <div className="flex justify-center items-center text-3xl text-purple"> 
-    <Image width="400" height="100" alt="yet another better office hour bot" src="https://github.com/KaoushikMurugan/yet-another-better-office-hour-bot/assets/60045212/c49faee6-053e-482c-9c52-01549047450a" />
+      <Image 
+        width="300" 
+        height="100" 
+        alt="yet another better office hour bot" 
+        src="https://github.com/KaoushikMurugan/yet-another-better-office-hour-bot/assets/60045212/c49faee6-053e-482c-9c52-01549047450a" 
+      />
     </div>
   )
 }
 
 const YABOBDescription = () => {
     return (
-        <div className="size-48">
-            TBD
+        <div className="flex justify-center align-middle p-4">
+            <ExpandableImage
+                src={YABOBFeaturesImage}
+                alt="Some Features of YABOB."
+                width={2156}
+                height={1492}
+                className="rounded-lg w-full max-w-[475px] object-contain"
+            />
         </div>
     )
 }
@@ -36,26 +50,18 @@ const YABOBSupportTitle = () => {
 const YABOBSupportDescription = () => {
     return (
         <div>
-            <div className="font-light text-lg">
-                An open-source, feature-rich Discord bot that automates the process of scheduling office hours for professors and TAs. Making queueing process more accessible for <span className="font-bold text-yellow-500">hundreds</span> of students to join a queue for a course with the simple press of a button, and having upcoming sessions (from a calendar) displayed in the channel.
-                <br/>
+            <div className="font-light text-lg space-y-2">
+                <p>Built a <AccentText text="feature-rich Discord bot"/> that automates office hour scheduling for professors and TAs, helping to make seeking guidance more <i>accessible</i> to <AccentText text="thousands"/> of students.</p>
+                <p>Manages multiple queues in the same server and works across multiple servers. Currently used by faculty at UC Davis and for tutoring services.</p>
             </div>
 
-            <div className="font-semibold text-lg">
-                <br />
-                <b>Technologies:</b> TypeScript, node.js, Discord.js, Firebase, Google Cloud API, AWS EC2
+            <div className="font-semibold text-lg mt-4">
+                <b>Technologies:</b> TypeScript, Node.js, Discord.js, Firebase, Google Cloud API, AWS EC2
             </div>
 
-            <br />
-
-            <div className="flex relative justify-center gap-10 text-5xl">
-                <a href="https://www.github.com/KaoushikMurugan/yet-another-better-office-hour-bot" target="_blank" rel="noopener noreferrer"> 
-                    <i className="bi bi-github ">
-                    </i>
-                </a>
-                <a>
-                    <i className="bi bi-youtube"></i>
-                </a>
+            <div className="flex justify-center gap-10 mt-4">
+                <SocialIcon platform="github" link="https://www.github.com/KaoushikMurugan/yet-another-better-office-hour-bot" />
+                {/* You can add the YouTube link here later when it's available */}
             </div>
         </div>
     )
