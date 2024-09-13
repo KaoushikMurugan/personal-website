@@ -4,7 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const globalFont = Inter({ subsets: ["latin"], variable:"--font-inter" });
 
 export const metadata: Metadata = {
   title: "Kaoushik Murugan",
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={globalFont.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
