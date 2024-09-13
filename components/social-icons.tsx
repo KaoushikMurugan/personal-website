@@ -2,7 +2,7 @@ import { cn } from '@/lib/utils';
 import React from 'react';
 
 interface SocialIconProps {
-  platform: 'github' | 'linkedin' | 'youtube'; // Add more platforms as needed
+  platform: 'github' | 'linkedin' | 'youtube' | 'email'; // Add more platforms as needed
   link: string;
   className?: string;
 }
@@ -16,6 +16,11 @@ export const SocialIcon: React.FC<SocialIconProps> = ({ platform, link, classNam
         return <i className="bi bi-linkedin"></i>;
       case 'youtube':
         return <i className="bi bi-youtube"></i>;
+      case 'email':
+        return <div className="group inline-block">
+          <i className="bi bi-envelope group-hover:hidden"></i>
+          <i className="bi bi-envelope-open-fill hidden group-hover:inline"></i>
+        </div>;
       default:
         return null;
     }
@@ -29,6 +34,8 @@ export const SocialIcon: React.FC<SocialIconProps> = ({ platform, link, classNam
         return 'hover:text-social-linkedin';
       case 'youtube':
         return 'hover:text-social-youtube';
+      case 'email':
+        return '';
       default:
         return 'hover:text-social-generic';
     }

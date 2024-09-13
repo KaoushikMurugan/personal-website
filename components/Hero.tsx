@@ -67,6 +67,11 @@ const Hero = () => {
                 link="https://www.linkedin.com/in/kaoushikmurugan/" 
                 className="text-neutral-300"
               />
+              <SocialIcon 
+                platform="email"
+                link="mailto:kaoushikmurugan@gmail.com?&subject=Hello%20Kaoushik!"
+                className="text-neutral-300"
+              />
           </div>
         </div>
       </div>
