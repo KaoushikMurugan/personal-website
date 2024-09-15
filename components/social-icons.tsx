@@ -2,13 +2,13 @@ import { cn } from '@/lib/utils';
 import React from 'react';
 
 interface SocialIconProps {
-  platform: 'github' | 'linkedin' | 'youtube' | 'email'; // Add more platforms as needed
+  platform?: 'github' | 'linkedin' | 'youtube' | 'email'; // Add more platforms as needed
   link: string;
   className?: string;
 }
 
 export const SocialIcon: React.FC<SocialIconProps> = ({ platform, link, className }) => {
-  const getIcon = (platform: string) => {
+  const getIcon = (platform?: string) => {
     switch (platform) {
       case 'github':
         return <i className="bi bi-github"></i>;
@@ -22,11 +22,11 @@ export const SocialIcon: React.FC<SocialIconProps> = ({ platform, link, classNam
           <i className="bi bi-envelope-open-fill hidden group-hover:inline"></i>
         </div>;
       default:
-        return null;
+        return <i className="bi bi-link"></i>;
     }
   };
 
-  const getHoverColor = (platform: string) => {
+  const getHoverColor = (platform?: string) => {
     switch (platform) {
       case 'github':
         return 'hover:text-social-github dark:hover:text-white';

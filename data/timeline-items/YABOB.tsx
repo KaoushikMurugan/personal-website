@@ -52,7 +52,7 @@ const YABOBSupportDescription = () => {
         <div>
             <div className="font-light text-lg space-y-2">
                 <p>Built a <AccentText text="feature-rich Discord bot"/> that automates office hour scheduling for professors and TAs, helping to make seeking guidance more <i>accessible</i> to <AccentText text="thousands"/> of students.</p>
-                <p>Manages multiple queues in the same server and works across multiple servers. Currently used at UC Davis by faculty and for tutoring services.</p>
+                <p>Using <AccentText text="OOP Design Patterns"/>, and following <AccentText text="good documentation practices"/>. Currently used at UC Davis by faculty and for tutoring services.</p>
             </div>
 
             <div className="font-semibold text-lg mt-4">
@@ -61,7 +61,6 @@ const YABOBSupportDescription = () => {
 
             <div className="flex justify-center gap-10 mt-4">
                 <SocialIcon platform="github" link="https://www.github.com/KaoushikMurugan/yet-another-better-office-hour-bot" />
-                {/* You can add the YouTube link here later when it's available */}
             </div>
         </div>
     )

@@ -44,7 +44,7 @@ const DeepCubeXSupportDescription = () => {
     return (
         <div>
             <div className="font-light text-lg">
-                A research project building upon DeepCubeA, which uses <AccentText text="Deep Q-Learning and IDA*"/> to solve a cube with no prior knowledge. Researching novel techniques to enforce human-like learning for Explainable AI. Using extensive data analysis and leveraging domain knowledge, solution ergonomics have <AccentText text="improved by 25%"/> so far.
+                A research project building upon DeepCubeA, which uses <AccentText text="Deep Q-Learning and IDA*"/> to solve a cube with no prior knowledge. Researching novel techniques to enforce human-like learning for <AccentText text="Explainable AI"/>. Using extensive data analysis and leveraging domain knowledge, solution ergonomics have <AccentText text="improved by 25%"/> so far.
             </div>
 
             <div className="font-semibold text-lg">

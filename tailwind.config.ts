@@ -31,7 +31,7 @@ const config = {
           github: "#181717",
           linkedin: "#0077B5",
           youtube: "#FF0000",
-          generic: "#555555",
+          generic: "#FFFFFF",
         },
         black: {
           DEFAULT: "#000",
