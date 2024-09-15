@@ -35,10 +35,10 @@ const CSTutoringSupportTitle = () => {
 const CSTutoringSupportDescription = () => {
     return (
         <div>
-            <div className="font-light text-lg">
-                <AccentText text="Lead and mentored a group of undergraduates"/> on SWE projects such as YABOB (see above) and building a website with useful tools for tutors to view their tutoring history, and other useful tools for tutors to use.
-                Tutored over 200 undergraduates on both lower-division and upper division CS topics such as object-oriented programming, data structures, algorithms, and computer architecture.
-                Conducted <AccentText text="code reviews"/> for students taking introductory CS courses in C and C++.
+            <div className="font-light text-lg space-y-2">
+                <p><AccentText text="Lead and mentored a group of undergraduates"/> on SWE projects such as YABOB (see above) and building a website with useful tools for tutors to view their tutoring history, and other useful tools for tutors to use.</p>
+                <p><AccentText text="Tutored over 200 undergraduates"/> on both lower-division and upper division CS topics such as object-oriented programming, data structures, algorithms, and computer architecture.</p>
+                <p>Conducted <AccentText text="code reviews"/> for students taking introductory CS courses in C and C++.</p>
             </div>
 
             <div className="font-semibold text-lg">

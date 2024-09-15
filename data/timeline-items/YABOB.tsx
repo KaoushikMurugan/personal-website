@@ -21,7 +21,7 @@ const YABOBTitle = () => {
 
 const YABOBDescription = () => {
     return (
-        <div className="flex justify-center align-middle p-4">
+        <div className="flex justify-center align-middle">
             <ExpandableImage
                 src={YABOBFeaturesImage}
                 alt="Some Features of YABOB."
@@ -52,7 +52,7 @@ const YABOBSupportDescription = () => {
         <div>
             <div className="font-light text-lg space-y-2">
                 <p>Built a <AccentText text="feature-rich Discord bot"/> that automates office hour scheduling for professors and TAs, helping to make seeking guidance more <i>accessible</i> to <AccentText text="thousands"/> of students.</p>
-                <p>Manages multiple queues in the same server and works across multiple servers. Currently used by faculty at UC Davis and for tutoring services.</p>
+                <p>Manages multiple queues in the same server and works across multiple servers. Currently used at UC Davis by faculty and for tutoring services.</p>
             </div>
 
             <div className="font-semibold text-lg mt-4">
