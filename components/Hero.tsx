@@ -58,13 +58,13 @@ const Hero = () => {
           <div className="flex relative justify-center items-center gap-10 text-5xl">
             <span className="text-3xl ">Connect with me!</span>
               <SocialIcon 
-                platform="github" 
-                link="https://github.com/KaoushikMurugan" 
+                platform="linkedin" 
+                link="https://www.linkedin.com/in/kaoushikmurugan/" 
                 className="text-neutral-300"
               />
               <SocialIcon 
-                platform="linkedin" 
-                link="https://www.linkedin.com/in/kaoushikmurugan/" 
+                platform="github" 
+                link="https://github.com/KaoushikMurugan" 
                 className="text-neutral-300"
               />
               <SocialIcon 
