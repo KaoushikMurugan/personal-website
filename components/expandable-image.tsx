@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 "use client";
 
 import React, { useState, useEffect } from 'react';
