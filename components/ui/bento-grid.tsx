@@ -19,20 +19,22 @@ export const BentoGrid = ({
   );
 };
 
-export const BentoGridItem = ({
-  className,
-  title,
-  description,
-  header,
-  icon,
-  id,
-}: {
+interface BentoGridItemProps {
   className?: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
   header?: React.ReactNode;
   icon?: React.ReactNode;
   id: number;
+}
+
+export const BentoGridItem: React.FC<BentoGridItemProps> = ({
+  className,
+  title,
+  description,
+  header,
+  icon,
+  id,
 }) => {
   return (
     <div

@@ -1,5 +1,5 @@
 import React from 'react'
-import timelineItem from './types'
+import { TimelineElement } from './types'
 import GameplayImage from "../../public/Connect4GameplayImage.png"
 import { SocialIcon } from '@/components/ui/social-icons'
 import { AccentText } from '@/components/ui/timeline-item'
@@ -76,7 +76,7 @@ const Connect4SupportDescription = () => {
     )
 }
 
-const Connect4: timelineItem = {
+const Connect4: TimelineElement = {
     title: <Connect4Title />,
     description: <Connect4Description />,
     id: 5,

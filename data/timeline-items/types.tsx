@@ -1,4 +1,4 @@
-type timelineItem = {
+export type TimelineElement = {
     title: string | React.ReactNode,
     description: string | React.ReactNode,
     id: number,
@@ -7,4 +7,4 @@ type timelineItem = {
     supportId: number,
 }
 
-export default timelineItem
+    icon?: React.ReactNode;

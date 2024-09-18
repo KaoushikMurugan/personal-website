@@ -1,5 +1,5 @@
 import React from 'react'
-import timelineItem from './types'
+import { TimelineElement } from './types'
 import { AccentText } from '@/components/ui/timeline-item'
 import ExpandableImage from '@/components/ui/expandable-image'
 import { TextBox } from '@/components/ui/text-box'
@@ -59,7 +59,7 @@ const DeepCubeXSupportDescription = () => {
     )
 }
 
-const DeepCubeX: timelineItem = {
+const DeepCubeX: TimelineElement = {
     title: <DeepCubeXTitle />,
     description: <DeepCubeXDescription />,
     id: 1,

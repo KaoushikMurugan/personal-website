@@ -1,5 +1,5 @@
 import React from 'react'
-import timelineItem from './types'
+import { TimelineElement } from './types'
 import Image from 'next/image'
 import { SocialIcon } from '@/components/ui/social-icons' // Correct import for SocialIcon
 import { AccentText } from '@/components/ui/timeline-item'
@@ -73,7 +73,7 @@ const YABOBSupportDescription = () => {
     )
 }
 
-const YABOB: timelineItem = {
+const YABOB: TimelineElement = {
     title: <YABOBTitle />,
     description: <YABOBDescription />,
     id: 2,

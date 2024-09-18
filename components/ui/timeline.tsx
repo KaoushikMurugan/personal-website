@@ -3,14 +3,14 @@
 import React, { useEffect, useState } from 'react'
 import { TimelineItem, TimelineSupport } from './timeline-item'
 import { cn } from '@/lib/utils';
-import timelineItem from '@/data/timeline-items/types';
+import { TimelineElement } from '@/data/timeline-items/types';
 
 const Timeline = ({
   className,
   timelineItems
 }: {
   className?: string;
-  timelineItems: timelineItem[]
+  timelineItems: TimelineElement[]
 }) => {
 
   const line_color = 'bg-violet-400'
@@ -113,7 +113,7 @@ const Timeline = ({
   )
 }
 
-function LeftIndentItem(item: timelineItem) {
+function LeftIndentItem(item: TimelineElement) {
   return <>
     <TimelineItem
       key={item.id}
@@ -132,7 +132,7 @@ function LeftIndentItem(item: timelineItem) {
   </>
 }
 
-function RightIntentItem(item: timelineItem) {
+function RightIntentItem(item: TimelineElement) {
   return <>
     <TimelineSupport
       key={item.supportId}

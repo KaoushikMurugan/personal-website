@@ -1,5 +1,5 @@
 import React from 'react'
-import timelineItem from './types'
+import { TimelineElement } from './types'
 import { AccentText } from '@/components/ui/timeline-item'
 import { TextBox } from '@/components/ui/text-box'
 
@@ -51,7 +51,7 @@ const CSTutoringSupportDescription = () => {
     )
 }
 
-const CSTutoring: timelineItem = {
+const CSTutoring: TimelineElement = {
     title: <CSTutoringTitle />,
     description: <CSTutoringDescription />,
     id: 4,

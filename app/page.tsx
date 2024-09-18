@@ -2,7 +2,7 @@ import Grid from "@/components/grid";
 import Hero from "@/components/hero";
 import ProgrammingIconsRibbon from "@/components/programming-icons-ribbon";
 import Timeline from "@/components/ui/timeline";
-import { timelineItems } from "@/data";
+import { timelineElements } from "@/data";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
         <Grid />
         {/* add some padding to the bottom */}
         <div className="h-20" />
-        <Timeline timelineItems={timelineItems}/>
+        <Timeline timelineItems={timelineElements}/>
       </div>
     </main>
   );

@@ -1,5 +1,5 @@
 import React from 'react'
-import timelineItem from './types'
+import { TimelineElement } from './types'
 import { SocialIcon } from '@/components/ui/social-icons'
 import { AccentText } from '@/components/ui/timeline-item'
 import { TextBox } from '@/components/ui/text-box'
@@ -74,7 +74,7 @@ const F1TenthSupportDescription = () => {
     );
 };
 
-const F1Tenth: timelineItem = {
+const F1Tenth: TimelineElement = {
     title: <F1TenthTitle />,
     description: <F1TenthDescription />,
     id: 3,
