@@ -11,7 +11,6 @@ export const gridItems = [
     { title: "Title3", description: "Descr3", id: 3 },
 ]
 
-
 export const timelineItems : timelineItem[] = [
     DeepCubeX,
     YABOB,

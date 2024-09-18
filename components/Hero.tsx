@@ -3,7 +3,7 @@ import { TextGenerateEffect } from './ui/text-generate-effect'
 import { Spotlight } from './ui/spotlight'
 import MagicButton from './buttons/magic-button'
 import { FaLocationArrow } from 'react-icons/fa6'
-import { SocialIcon } from './social-icons'
+import { SocialIcon } from './ui/social-icons'
 import { WavyBackground } from './ui/wavy-background'
 
 const Hero = () => {

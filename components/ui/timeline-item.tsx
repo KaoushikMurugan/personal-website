@@ -33,7 +33,6 @@ export const TimelineBaseItem: React.FC<TimelineBaseItemProps> = ({
         className
       )}
     >
-      {/* Adjusted this div to be a flex container */}
       <div className="transition duration-200 flex flex-col h-full">
         <div className="flex items-center justify-center space-x-3">
           {icon && <div className="text-4xl text-indigo-600">{icon}</div>}
@@ -46,7 +45,6 @@ export const TimelineBaseItem: React.FC<TimelineBaseItemProps> = ({
             {title}
           </div>
         </div>
-        {/* Added flex-grow to this div */}
         <div
           className={cn(
             "font-sans text-neutral-600 dark:text-neutral-300 leading-relaxed flex-grow",

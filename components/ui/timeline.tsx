@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react'
 import { TimelineItem, TimelineSupport } from './timeline-item'
 import { cn } from '@/lib/utils';
 import timelineItem from '@/data/timeline-items/types';
-import { time } from 'console';
 
 const Timeline = ({
   className,
@@ -29,10 +28,15 @@ const Timeline = ({
     const handleResize = () => {
       const width = window.innerWidth;
       const isMobile = width < 1024;
+      // diving by 32 for rem factor
       const deltaW = (1400 - width) / 32;
-      const mobileDeltaW = (1024 - width) / 32;
-      const newHeight = isMobile ? defaultRowHeight*(defaultMobileColumnWidth)/(defaultMobileColumnWidth - growthFactor * mobileDeltaW) : 
-      width < 1400 ? defaultRowHeight*(defaultColumnWidth)/(defaultColumnWidth - growthFactor * deltaW) : defaultRowHeight;
+      const mobileDeltaW = (1024 - width) / 32; 
+      // newHeight is a Continuous, inverse function of deltaW, within the domains of isMobile and !isMobile
+      const newHeight = isMobile 
+        ? defaultRowHeight*(defaultMobileColumnWidth)/(defaultMobileColumnWidth - growthFactor * mobileDeltaW) 
+        : width < 1400
+          ? defaultRowHeight*(defaultColumnWidth)/(defaultColumnWidth - growthFactor * deltaW)
+          : defaultRowHeight;
       setMobile(isMobile);
       setBoxHeight(newHeight);
       setBoxHeightString(`${newHeight}rem`);

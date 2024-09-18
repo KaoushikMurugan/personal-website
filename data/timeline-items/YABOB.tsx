@@ -1,11 +1,11 @@
 import React from 'react'
 import timelineItem from './types'
 import Image from 'next/image'
-import { SocialIcon } from '@/components/social-icons' // Correct import for SocialIcon
-import { AccentText } from '@/components/timeline-item'
+import { SocialIcon } from '@/components/ui/social-icons' // Correct import for SocialIcon
+import { AccentText } from '@/components/ui/timeline-item'
 import YABOBFeaturesImage from "../../public/YABOB_Features.png"
-import ExpandableImage from '@/components/expandable-image'
-import { TextBox } from '@/components/text-box'
+import ExpandableImage from '@/components/ui/expandable-image'
+import { TextBox } from '@/components/ui/text-box'
 
 const YABOBTitle = () => {
   return (

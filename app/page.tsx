@@ -1,7 +1,7 @@
 import Grid from "@/components/grid";
 import Hero from "@/components/hero";
 import ProgrammingIconsRibbon from "@/components/programming-icons-ribbon";
-import Timeline from "@/components/timeline";
+import Timeline from "@/components/ui/timeline";
 import { timelineItems } from "@/data";
 
 export default function Home() {

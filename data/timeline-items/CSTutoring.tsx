@@ -1,7 +1,7 @@
 import React from 'react'
 import timelineItem from './types'
-import { AccentText } from '@/components/timeline-item'
-import { TextBox } from '@/components/text-box'
+import { AccentText } from '@/components/ui/timeline-item'
+import { TextBox } from '@/components/ui/text-box'
 
 const CSTutoringTitle = () => {
   return (

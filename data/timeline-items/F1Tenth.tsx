@@ -1,11 +1,8 @@
 import React from 'react'
 import timelineItem from './types'
-import Image from 'next/image'
-import ArchitectureDiagram from "../../public/F1Tenth_Architecture_darkmode.png"
-import { SocialIcon } from '@/components/social-icons'
-import { AccentText } from '@/components/timeline-item'
-import ExpandableImage from '@/components/expandable-image'
-import { TextBox } from '@/components/text-box'
+import { SocialIcon } from '@/components/ui/social-icons'
+import { AccentText } from '@/components/ui/timeline-item'
+import { TextBox } from '@/components/ui/text-box'
 
 const F1TenthTitle = () => {
   return (

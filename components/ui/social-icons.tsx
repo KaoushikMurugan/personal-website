@@ -2,7 +2,7 @@ import { cn } from '@/lib/utils';
 import React from 'react';
 
 interface SocialIconProps {
-  platform?: 'github' | 'linkedin' | 'youtube' | 'email'; // Add more platforms as needed
+  platform?: 'github' | 'linkedin' | 'youtube' | 'email';
   link: string;
   className?: string;
 }
