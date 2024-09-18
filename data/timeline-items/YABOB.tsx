@@ -5,6 +5,7 @@ import { SocialIcon } from '@/components/social-icons' // Correct import for Soc
 import { AccentText } from '@/components/timeline-item'
 import YABOBFeaturesImage from "../../public/YABOB_Features.png"
 import ExpandableImage from '@/components/expandable-image'
+import { TextBox } from '@/components/text-box'
 
 const YABOBTitle = () => {
   return (
@@ -55,8 +56,14 @@ const YABOBSupportDescription = () => {
                 <p>Using <AccentText text="OOP Design Patterns"/>, and following <AccentText text="good documentation practices"/>. Currently used at UC Davis by faculty and for tutoring services.</p>
             </div>
 
-            <div className="font-semibold text-lg mt-4">
-                <b>Technologies:</b> TypeScript, Node.js, Discord.js, Firebase, Google Cloud API, AWS EC2
+            <div className="font-semibold text-sm mt-4 flex flex-wrap gap-1 justify-center">
+                <TextBox text="TypeScript"/>
+                <TextBox text="Node.js"/>
+                <TextBox text="Discord.js"/>
+                <TextBox text="Firebase"/>
+                <TextBox text="Google Cloud"/>
+                <TextBox text="API"/>
+                <TextBox text="AWS EC2"/>
             </div>
 
             <div className="flex justify-center gap-10 mt-4">

@@ -5,6 +5,7 @@ import ArchitectureDiagram from "../../public/F1Tenth_Architecture_darkmode.png"
 import { SocialIcon } from '@/components/social-icons'
 import { AccentText } from '@/components/timeline-item'
 import ExpandableImage from '@/components/expandable-image'
+import { TextBox } from '@/components/text-box'
 
 const F1TenthTitle = () => {
   return (
@@ -57,12 +58,17 @@ const F1TenthSupportDescription = () => {
                 </ul>
             </div>
 
-            <div className="font-semibold text-lg mt-4">
-                <b>Technologies:</b> ROS2, Docker, Python, C++, PyTest, Google Test
+            <div className="font-semibold text-sm mt-4 flex flex-wrap gap-1 justify-center">
+                <TextBox text="ROS2"/>
+                <TextBox text="Docker"/>
+                <TextBox text="Python"/>
+                <TextBox text="C++"/>
+                <TextBox text="PyTest"/>
+                <TextBox text="Google Test"/>
             </div>
-            <br />
+            
 
-            <div className="flex justify-center gap-10">
+            <div className="flex justify-center gap-10 mt-4">
                 <SocialIcon platform="github" link="https://github.com/ian-chuang/f1tenth_gym_ros" />
                 <SocialIcon platform="youtube" link="https://www.youtube.com/watch?v=IEvM3ufXBYI" />
                 <SocialIcon platform="linkedin" link="https://www.linkedin.com/posts/erikc1_teamwork-makes-the-dreamwork-we-had-a-activity-7207041546095874049-zK1V?utm_source=share&utm_medium=member_desktop" />

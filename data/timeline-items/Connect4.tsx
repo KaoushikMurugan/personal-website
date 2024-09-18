@@ -5,6 +5,7 @@ import GameplayImage from "../../public/Connect4GameplayImage.png"
 import { SocialIcon } from '@/components/social-icons'
 import { AccentText } from '@/components/timeline-item'
 import ExpandableImage from '@/components/expandable-image'
+import { TextBox } from '@/components/text-box'
 
 const Connect4Title = () => {
   return (
@@ -54,12 +55,21 @@ const Connect4SupportDescription = () => {
                 <p>Programmed clients in <AccentText text="Embedded C"/> and the server in TypeScript.</p>
             </div>
 
-            <div className="font-semibold text-lg mt-4">
-                <b>Technologies:</b> Embedded C, TypeScript, Node.js, AWS IoT, AWS EC2, TI CC3200, SPI, MQTT, REST
+            <div className="font-semibold text-sm mt-4 flex flex-wrap gap-1 justify-center">
+                <TextBox text="Embedded C"/>
+                <TextBox text="TypeScript"/>
+                <TextBox text="ARM"/>
+                <TextBox text="Node.js"/>
+                <TextBox text="AWS IoT"/>
+                <TextBox text="AWS EC2"/>
+                <TextBox text="TI CC3200"/>
+                <TextBox text="SPI"/>
+                <TextBox text="GPIO"/>
+                <TextBox text="REST"/>
+                <TextBox text="MQTT"/>
             </div>
-            <br />
 
-            <div className="flex justify-center gap-10">
+            <div className="flex justify-center mt-4 gap-10">
                 <SocialIcon platform="github" link="https://github.com/KaoushikMurugan/Connect-4-on-Embedded-Systems" />
                 <SocialIcon platform="youtube" link="https://www.youtube.com/watch?v=_yJF8NcShj4" />
             </div>

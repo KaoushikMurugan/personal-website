@@ -1,6 +1,7 @@
 import React from 'react'
 import timelineItem from './types'
 import { AccentText } from '@/components/timeline-item'
+import { TextBox } from '@/components/text-box'
 
 const CSTutoringTitle = () => {
   return (
@@ -41,9 +42,10 @@ const CSTutoringSupportDescription = () => {
                 <p>Conducted <AccentText text="code reviews"/> for students taking introductory CS courses in C and C++.</p>
             </div>
 
-            <div className="font-semibold text-lg">
-                <br />
-                <b>Skills:</b> Leadership, Communication, Mentoring
+            <div className="font-semibold text-sm mt-4 flex flex-wrap gap-1 justify-center">
+                <TextBox text="Leadership"/>
+                <TextBox text="Communication"/>
+                <TextBox text="Mentoring"/>
             </div>
         </div>
     )
