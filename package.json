@@ -22,6 +22,7 @@
     "react-dom": "^18",
     "react-element-to-jsx-string": "^15.0.0",
     "react-icons": "^5.2.1",
+    "simplex-noise": "^4.0.3",
     "sonner": "^1.5.0",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7"
