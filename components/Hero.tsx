@@ -43,20 +43,22 @@ const Hero = () => {
               "from-cyan-400 to-teal-300",
               "from-teal-300 to-cyan-400"]}
           />
-          <p className = "text-center md:text-sm lg:text-xl">
+          <p className = "text-center text-xl">
             Welcome to my portfolio website!
           </p>
 
-          <a href="#about">
+          <div className="h-10"/>
+          <a href="#timeline">
             <MagicButton 
               title="Show My Work"
               icon={<FaLocationArrow />}
               position="right"
             />
           </a>
-          <div className="flex justify-center items-center h-10"/>
-          <div className="flex relative justify-center items-center gap-10 text-5xl">
-            <span className="text-3xl ">Connect with me!</span>
+          <div className="h-10"/>
+          <div className="flex flex-col sm:flex-row relative justify-center items-center gap-10 text-5xl">
+            <span className="text-3xl">Connect with me!</span>
+            <div className="flex sm:flex-row gap-8">
               <SocialIcon 
                 platform="linkedin" 
                 link="https://www.linkedin.com/in/kaoushikmurugan/" 
@@ -72,9 +74,11 @@ const Hero = () => {
                 link="mailto:kaoushikmurugan@gmail.com?&subject=Hello%20Kaoushik!"
                 className="text-neutral-300"
               />
+            </div>
           </div>
         </div>
       </div>
+      </WavyBackground>
     </div>
   )
 }
