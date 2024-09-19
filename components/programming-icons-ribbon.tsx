@@ -115,37 +115,37 @@ const ProgrammingIconsRibbonStack = (): JSX.Element => {
   return (
     <>
       <ProgrammingIconsRibbon direction="left" speed="fast">
-        <Icons.CLang {...iconProps} />
-        <Icons.JavaScript {...iconProps} />
         <Icons.Python {...iconProps} />
+        <Icons.CLang {...iconProps} />
         <Icons.CPlusPlus {...iconProps} />
-        <Icons.TypeScript {...iconProps} />
-        <Icons.HTML5 {...iconProps} />
-        <Icons.Bash {...iconProps} />
         <Icons.CSharp {...iconProps} />
+        <Icons.JavaScript {...iconProps} />
+        <Icons.TypeScript {...iconProps} />
         <Icons.Java {...iconProps} />
+        <Icons.HTML5 {...iconProps} />
         <Icons.CSS3 {...iconProps} />
+        <Icons.Bash {...iconProps} />
       </ProgrammingIconsRibbon>
       <ProgrammingIconsRibbon direction="right" speed="normal">
-        <Icons.PyTorch {...wideIconProps} />
         <Icons.React {...iconProps} />
-        <Icons.Firebase {...iconProps} />
-        <Icons.NumPy {...wideIconProps} />
-        <Icons.AWS {...iconProps} />
         <Icons.NodeJS {...iconProps} />
-        <Icons.TensorFlow {...iconProps} />
         <Icons.NextJS {...wideIconProps} />
-        <Icons.Pandas {...iconProps} />
         <Icons.Tailwind {...iconProps} />
+        <Icons.TensorFlow {...iconProps} />
+        <Icons.PyTorch {...wideIconProps} />
+        <Icons.Pandas {...iconProps} />
+        <Icons.NumPy {...wideIconProps} />
+        <Icons.Firebase {...iconProps} />
       </ProgrammingIconsRibbon>
       <ProgrammingIconsRibbon direction="left" speed="fast">
-        <Icons.Godot {...iconProps} />
-        <Icons.GitHub {...iconProps} />
-        <Icons.GoogleCloud {...iconProps} />
         <Icons.Unity {...wideIconProps} />
+        <Icons.Godot {...iconProps} />
+        <Icons.AWS {...iconProps} />
+        <Icons.GoogleCloud {...iconProps} />
         <Icons.Linux {...iconProps} />
         <Icons.Docker {...iconProps} />
         <Icons.Git {...iconProps} />
+        <Icons.GitHub {...iconProps} />
         <Icons.RaspberryPi {...iconProps} />
         <Icons.ROS {...wideIconProps} />
       </ProgrammingIconsRibbon>
