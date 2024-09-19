@@ -29,13 +29,13 @@ export const SocialIcon: React.FC<SocialIconProps> = ({ platform, link, classNam
   const getHoverColor = (platform?: string) => {
     switch (platform) {
       case 'github':
-        return 'hover:text-social-github dark:hover:text-white';
+        return 'hover:text-indigo-400';
         case 'linkedin':
         return 'hover:text-social-linkedin';
       case 'youtube':
         return 'hover:text-social-youtube';
       case 'email':
-        return '';
+        return 'hover:text-amber-300';
       default:
         return 'hover:text-social-generic';
     }

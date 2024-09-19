@@ -30,7 +30,7 @@ const config = {
         social: {
           github: "#181717",
           linkedin: "#0077B5",
-          youtube: "#FF0000",
+          youtube: "#EA3323",
           generic: "#FFFFFF",
         },
         black: {
