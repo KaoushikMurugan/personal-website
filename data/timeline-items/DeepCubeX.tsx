@@ -33,7 +33,7 @@ const DeepCubeXSupportTitle = () => {
                 March 2024 - Present
             </div>
             <i className="font-normal text-xl">
-                Undergraduate AI/ML Researcher at Davidson Lab, UC Davis
+                AI/ML Researcher at Davidson Lab, UC Davis
             </i> 
             <br />
         </div>
