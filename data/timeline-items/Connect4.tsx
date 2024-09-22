@@ -5,6 +5,7 @@ import { SocialIcon } from '@/components/ui/social-icons'
 import { AccentText } from "@/components/ui/accent-text"
 import ExpandableImage from '@/components/ui/expandable-image'
 import { TextBox } from '@/components/ui/text-box'
+import TextBoxList from '@/components/ui/text-box-list'
 
 const Connect4Title = () => {
   return (
@@ -55,17 +56,21 @@ const Connect4SupportDescription = () => {
             </div>
 
             <div className="font-semibold text-sm mt-4 flex flex-wrap gap-1 justify-center">
-                <TextBox text="Embedded C"/>
-                <TextBox text="TypeScript"/>
-                <TextBox text="ARM"/>
-                <TextBox text="Node.js"/>
-                <TextBox text="AWS IoT"/>
-                <TextBox text="AWS EC2"/>
-                <TextBox text="TI CC3200"/>
-                <TextBox text="SPI"/>
-                <TextBox text="GPIO"/>
-                <TextBox text="REST"/>
-                <TextBox text="MQTT"/>
+                <TextBoxList items={[
+                    "Embedded C",
+                    "TypeScript",
+                    "ARM",
+                    "Node.js",
+                    "AWS IoT",
+                    "AWS EC2",
+                    "TI CC3200",
+                    "Hardware",
+                    "SPI",
+                    "GPIO",
+                    "Networking",
+                    "REST",
+                    "MQTT",
+                ]} />
             </div>
 
             <div className="flex justify-center mt-4 gap-10">

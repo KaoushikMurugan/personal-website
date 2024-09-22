@@ -2,6 +2,7 @@ import React from 'react'
 import { TimelineElement } from './types'
 import { AccentText } from "@/components/ui/accent-text"
 import { TextBox } from '@/components/ui/text-box'
+import TextBoxList from '@/components/ui/text-box-list'
 
 const CSTutoringTitle = () => {
   return (
@@ -14,7 +15,7 @@ const CSTutoringTitle = () => {
 const CSTutoringDescription = () => {
     return (
         <div className="">
-            {/* You can add any description content here later */}
+            {/* TBD */}
         </div>
     )
 }
@@ -43,9 +44,11 @@ const CSTutoringSupportDescription = () => {
             </div>
 
             <div className="font-semibold text-sm mt-4 flex flex-wrap gap-1 justify-center">
-                <TextBox text="Leadership"/>
-                <TextBox text="Communication"/>
-                <TextBox text="Mentoring"/>
+                <TextBoxList items={[
+                    "Leadership",
+                    "Communication",
+                    "Mentoring",
+                    ]} />
             </div>
         </div>
     )

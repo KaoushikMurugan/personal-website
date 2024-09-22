@@ -3,6 +3,7 @@ import { TimelineElement } from './types'
 import { AccentText } from "@/components/ui/accent-text"
 import ExpandableImage from '@/components/ui/expandable-image'
 import { TextBox } from '@/components/ui/text-box'
+import TextBoxList from '@/components/ui/text-box-list'
 
 const DeepCubeXTitle = () => {
   return (
@@ -48,12 +49,14 @@ const DeepCubeXSupportDescription = () => {
             </div>
 
             <div className="font-semibold text-sm mt-4 flex flex-wrap gap-1 justify-center">
-                <TextBox text="Python"/>
-                <TextBox text="C++"/>
-                <TextBox text="PyTorch"/>
-                <TextBox text="Numpy"/>
-                <TextBox text="Pandas"/>
-                <TextBox text="Matplotlib"/>
+                <TextBoxList items={[
+                    "Python",
+                    "C++",
+                    "PyTorch",
+                    "Numpy",
+                    "Pandas",
+                    "Matplotlib",
+                ]} />
             </div>
         </div>
     )

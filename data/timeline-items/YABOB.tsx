@@ -6,6 +6,7 @@ import { AccentText } from "@/components/ui/accent-text"
 import YABOBFeaturesImage from "../../public/YABOB_Features.png"
 import ExpandableImage from '@/components/ui/expandable-image'
 import { TextBox } from '@/components/ui/text-box'
+import TextBoxList from '@/components/ui/text-box-list'
 
 const YABOBTitle = () => {
   return (
@@ -57,13 +58,15 @@ const YABOBSupportDescription = () => {
             </div>
 
             <div className="font-semibold text-sm mt-4 flex flex-wrap gap-1 justify-center">
-                <TextBox text="TypeScript"/>
-                <TextBox text="Node.js"/>
-                <TextBox text="Discord.js"/>
-                <TextBox text="Firebase"/>
-                <TextBox text="Google Cloud"/>
-                <TextBox text="API"/>
-                <TextBox text="AWS EC2"/>
+                <TextBoxList items={[
+                    "TypeScript",
+                    "Node.js",
+                    "Discord.js",
+                    "Firebase",
+                    "Google Cloud",
+                    "API",
+                    "AWS EC2",
+                ]} />
             </div>
 
             <div className="flex justify-center gap-10 mt-4">

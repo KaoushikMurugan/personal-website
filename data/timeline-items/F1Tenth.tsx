@@ -3,6 +3,7 @@ import { TimelineElement } from './types'
 import { SocialIcon } from '@/components/ui/social-icons'
 import { AccentText } from "@/components/ui/accent-text"
 import { TextBox } from '@/components/ui/text-box'
+import TextBoxList from '@/components/ui/text-box-list'
 
 const F1TenthTitle = () => {
   return (
@@ -56,12 +57,14 @@ const F1TenthSupportDescription = () => {
             </div>
 
             <div className="font-semibold text-sm mt-4 flex flex-wrap gap-1 justify-center">
-                <TextBox text="ROS2"/>
-                <TextBox text="Docker"/>
-                <TextBox text="Python"/>
-                <TextBox text="C++"/>
-                <TextBox text="PyTest"/>
-                <TextBox text="Google Test"/>
+                <TextBoxList items={[
+                    "ROS2",
+                    "Docker",
+                    "Python",
+                    "C++",
+                    "PyTest",
+                    "Google Test",
+                ]} />
             </div>
             
 
