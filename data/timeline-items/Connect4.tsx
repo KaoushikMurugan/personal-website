@@ -64,12 +64,8 @@ const Connect4SupportDescription = () => {
                     "AWS IoT",
                     "AWS EC2",
                     "TI CC3200",
-                    "Hardware",
-                    "SPI",
-                    "GPIO",
+                    "Embedded Systems",
                     "Networking",
-                    "REST",
-                    "MQTT",
                 ]} />
             </div>
 
