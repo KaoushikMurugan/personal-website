@@ -2,7 +2,6 @@ import React from 'react'
 import { TimelineElement } from './types'
 import { SocialIcon } from '@/components/ui/social-icons'
 import { AccentText } from "@/components/ui/accent-text"
-import { TextBox } from '@/components/ui/text-box'
 import TextBoxList from '@/components/ui/text-box-list'
 
 const F1TenthTitle = () => {

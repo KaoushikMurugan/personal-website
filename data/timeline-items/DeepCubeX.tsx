@@ -2,7 +2,6 @@ import React from 'react'
 import { TimelineElement } from './types'
 import { AccentText } from "@/components/ui/accent-text"
 import ExpandableImage from '@/components/ui/expandable-image'
-import { TextBox } from '@/components/ui/text-box'
 import TextBoxList from '@/components/ui/text-box-list'
 
 const DeepCubeXTitle = () => {

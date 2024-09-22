@@ -5,7 +5,6 @@ import { SocialIcon } from '@/components/ui/social-icons' // Correct import for 
 import { AccentText } from "@/components/ui/accent-text"
 import YABOBFeaturesImage from "../../public/YABOB_Features.png"
 import ExpandableImage from '@/components/ui/expandable-image'
-import { TextBox } from '@/components/ui/text-box'
 import TextBoxList from '@/components/ui/text-box-list'
 
 const YABOBTitle = () => {
