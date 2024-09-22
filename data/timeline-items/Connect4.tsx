@@ -2,7 +2,7 @@ import React from 'react'
 import { TimelineElement } from './types'
 import GameplayImage from "../../public/Connect4GameplayImage.png"
 import { SocialIcon } from '@/components/ui/social-icons'
-import { AccentText } from '@/components/ui/timeline-item'
+import { AccentText } from "@/components/ui/accent-text"
 import ExpandableImage from '@/components/ui/expandable-image'
 import { TextBox } from '@/components/ui/text-box'
 

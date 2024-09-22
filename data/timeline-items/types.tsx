@@ -7,4 +7,9 @@ export type TimelineElement = {
     supportId: number,
 }
 
+export type BentoBoxElement = {
+    title?: string | React.ReactNode;
+    description?: string | React.ReactNode;
     icon?: React.ReactNode;
+    id: number;
+}
