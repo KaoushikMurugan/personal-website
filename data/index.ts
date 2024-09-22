@@ -1,3 +1,6 @@
+import Adaptability from "./bento-box-elements/Adaptability"
+import Collaboration from "./bento-box-elements/Collaboration"
+import Interests from "./bento-box-elements/Interests"
 import Connect4 from "./timeline-items/Connect4"
 import CSTutoring from "./timeline-items/CSTutoring"
 import DeepCubeX from "./timeline-items/DeepCubeX"
@@ -6,9 +9,9 @@ import { TimelineElement } from "./timeline-items/types"
 import YABOB from "./timeline-items/YABOB"
 
 export const gridItems = [
-    { title: "Title1", description: "Descr1", id: 1 },
-    { title: "Title2", description: "Descr2", id: 2 },
-    { title: "Title3", description: "Descr3", id: 3 },
+    Adaptability,
+    Interests,
+    Collaboration,
 ]
 
 export const timelineElements : TimelineElement[] = [
