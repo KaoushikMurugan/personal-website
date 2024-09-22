@@ -68,7 +68,7 @@ const F1TenthSupportDescription = () => {
             <div className="flex justify-center gap-10 mt-4">
                 <SocialIcon platform="github" link="https://github.com/ian-chuang/f1tenth_gym_ros" />
                 <SocialIcon platform="youtube" link="https://www.youtube.com/watch?v=IEvM3ufXBYI" />
-                <SocialIcon platform="linkedin" link="https://www.linkedin.com/posts/erikc1_teamwork-makes-the-dreamwork-we-had-a-activity-7207041546095874049-zK1V?utm_source=share&utm_medium=member_desktop" />
+                <SocialIcon platform="linkedin" link="https://www.linkedin.com/posts/erikc1_teamwork-makes-the-dreamwork-we-had-a-activity-7207041546095874049-zK1V/" />
             </div>
         </div>
     );
