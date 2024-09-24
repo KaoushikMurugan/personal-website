@@ -78,21 +78,19 @@ export const ProgrammingIconsRibbon = ({
       className={cn(
         "scroller relative z-20  max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         slowOnHover && "translate-x-0 [transition:calc(var(--animation-duration)_*_.1)_ease-out]",
-        (slowOnHover && direction === "left") ? "hover:-translate-x-[10%]" : "hover:translate-x-[10%]",
+        (slowOnHover && (direction === "left" ? "hover:translate-x-[7.5%]" : "hover:-translate-x-[7.5%]")),
         className
       )}
     >
       <ul
         ref={scrollerRef}
-        key="scroller" // only cause compiler was complaining about ul requiring a unique key
+        key="scroller"
         className={cn(
-          " flex min-w-full shrink-0 gap-8 py-4 w-max flex-nowrap",
-          start && "animate-scroll ",
-          slowOnHover && "hover:[animation-play-state:paused]",
-          // TODO
-          // speed === "fast" && "hover:[animation-duration:40s]",
-          // speed === "normal" && "hover:[animation-duration:80s]",
-          // speed === "slow" && "hover:[animation-duration:160s]",
+          "flex min-w-full shrink-0 gap-8 py-4 w-max flex-nowrap",
+          start && "animate-scroll",
+          speed === "fast" && "animation-duration:40s",
+          speed === "normal" && "animation-duration:80s",
+          speed === "slow" && "animation-duration:160s",
         )}
       >
         {children}
@@ -114,7 +112,7 @@ const ProgrammingIconsRibbonStack = (): JSX.Element => {
 
   return (
     <>
-      <ProgrammingIconsRibbon direction="left" speed="fast">
+      <ProgrammingIconsRibbon direction="left" speed="normal">
         <Icons.Python {...iconProps} />
         <Icons.CLang {...iconProps} />
         <Icons.CPlusPlus {...iconProps} />
@@ -126,7 +124,7 @@ const ProgrammingIconsRibbonStack = (): JSX.Element => {
         <Icons.CSS3 {...iconProps} />
         <Icons.Bash {...iconProps} />
       </ProgrammingIconsRibbon>
-      <ProgrammingIconsRibbon direction="right" speed="normal">
+      <ProgrammingIconsRibbon direction="right" speed="slow">
         <Icons.React {...iconProps} />
         <Icons.NodeJS {...iconProps} />
         <Icons.NextJS {...wideIconProps} />
@@ -137,7 +135,7 @@ const ProgrammingIconsRibbonStack = (): JSX.Element => {
         <Icons.NumPy {...wideIconProps} />
         <Icons.Firebase {...iconProps} />
       </ProgrammingIconsRibbon>
-      <ProgrammingIconsRibbon direction="left" speed="fast">
+      <ProgrammingIconsRibbon direction="left" speed="normal">
         <Icons.Unity {...wideIconProps} />
         <Icons.Godot {...iconProps} />
         <Icons.AWS {...iconProps} />
