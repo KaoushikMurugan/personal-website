@@ -83,7 +83,7 @@ export const TimelineSupport: React.FC<TimelineItemProps> = (timelineItemProps) 
     <TimelineBaseItem 
       {...timelineItemProps}
       rootClassName = "dark:bg-black bg-white dark:border-white/[0.2] border-red-500 border border-transparent"
-      titleClassName = "group-hover/bento:text-indigo-600"
+      titleClassName = "group-hover/bento:text-indigo-600 py-2"
       descriptionClassName = "font-normal text-xs"
     />
   );
