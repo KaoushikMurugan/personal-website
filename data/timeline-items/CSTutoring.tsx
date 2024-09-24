@@ -5,7 +5,7 @@ import TextBoxList from '@/components/ui/text-box-list'
 
 const CSTutoringTitle = () => {
   return (
-    <div className="text-3xl text-purple"> 
+    <div> 
         CSTutoring
     </div>
   )

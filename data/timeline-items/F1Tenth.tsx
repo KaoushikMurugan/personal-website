@@ -6,7 +6,7 @@ import TextBoxList from '@/components/ui/text-box-list'
 
 const F1TenthTitle = () => {
   return (
-    <div className="text-3xl text-purple"> 
+    <div> 
         1:10th Scale Autonomous Car
     </div>
   )

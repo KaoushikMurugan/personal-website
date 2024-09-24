@@ -8,7 +8,7 @@ import TextBoxList from '@/components/ui/text-box-list'
 
 const Connect4Title = () => {
   return (
-    <div className="text-3xl text-purple"> 
+    <div> 
         Connect4 on Embedded Systems
     </div>
   )

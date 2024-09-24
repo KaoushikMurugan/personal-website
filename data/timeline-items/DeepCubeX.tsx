@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 const DeepCubeXTitle = () => {
   return (
-    <div className="text-3xl text-purple"> 
+    <div> 
         DeepCubeX
     </div>
   )

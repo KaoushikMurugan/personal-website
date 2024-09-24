@@ -9,7 +9,7 @@ import TextBoxList from '@/components/ui/text-box-list'
 
 const YABOBTitle = () => {
   return (
-    <div className="flex justify-center items-center text-3xl text-purple"> 
+    <div className="flex justify-center items-center"> 
       <Image 
         width="300" 
         height="100" 

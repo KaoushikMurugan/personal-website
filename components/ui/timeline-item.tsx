@@ -38,7 +38,7 @@ export const TimelineBaseItem: React.FC<TimelineBaseItemProps> = ({
           {icon && <div className="text-4xl text-indigo-600">{icon}</div>}
           <div
             className={cn(
-              "font-sans font-bold text-neutral-600 dark:text-neutral-200 text-center text-2xl md:text-3xl transition duration-200",
+              "font-sans font-bold text-center md:text-3xl transition duration-200",
               titleClassName
             )}
           >
@@ -72,7 +72,7 @@ export const TimelineItem: React.FC<TimelineItemProps> = (timelineItemProps) => 
     <TimelineBaseItem 
       {...timelineItemProps}
       rootClassName = "dark:bg-indigo-950 bg-indigo-300"
-      titleClassName = ""
+      titleClassName = "text-3xl text-purple"
       descriptionClassName = "font-semibold text-lg space-y-2 flex items-center justify-center align-middle"
     />
   );
@@ -83,7 +83,7 @@ export const TimelineSupport: React.FC<TimelineItemProps> = (timelineItemProps) 
     <TimelineBaseItem 
       {...timelineItemProps}
       rootClassName = "dark:bg-black bg-white dark:border-white/[0.2] border-red-500 border border-transparent"
-      titleClassName = "group-hover/bento:text-indigo-600 py-2"
+      titleClassName = "group-hover/bento:text-indigo-600 text-neutral-600 dark:text-neutral-200 text-2xl py-2"
       descriptionClassName = "font-normal text-xs"
     />
   );
