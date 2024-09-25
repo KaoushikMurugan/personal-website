@@ -2,7 +2,7 @@ import React from 'react'
 import { TimelineElement } from './types'
 import { AccentText } from "@/components/ui/accent-text"
 import ExpandableImage from '@/components/ui/expandable-image'
-import TextBoxList from '@/components/ui/text-box-list'
+import TagList from '@/components/ui/tag-list'
 import Image from 'next/image'
 
 const DeepCubeXTitle = () => {
@@ -52,7 +52,7 @@ const DeepCubeXSupportDescription = () => {
             </div>
 
             <div className="font-semibold text-sm mt-4 flex flex-wrap gap-1 justify-center">
-                <TextBoxList items={[
+                <TagList items={[
                     "Python",
                     "C++",
                     "PyTorch",

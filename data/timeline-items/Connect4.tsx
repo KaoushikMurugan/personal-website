@@ -4,7 +4,7 @@ import GameplayImage from "../../public/Connect4GameplayImage.png"
 import { SocialIcon } from '@/components/ui/social-icons'
 import { AccentText } from "@/components/ui/accent-text"
 import ExpandableImage from '@/components/ui/expandable-image'
-import TextBoxList from '@/components/ui/text-box-list'
+import TagList from '@/components/ui/tag-list'
 
 const Connect4Title = () => {
   return (
@@ -55,7 +55,7 @@ const Connect4SupportDescription = () => {
             </div>
 
             <div className="font-semibold text-sm mt-4 flex flex-wrap gap-1 justify-center">
-                <TextBoxList items={[
+                <TagList items={[
                     "Embedded C",
                     "TypeScript",
                     "ARM",

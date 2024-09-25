@@ -5,7 +5,7 @@ import { SocialIcon } from '@/components/ui/social-icons'
 import { AccentText } from "@/components/ui/accent-text"
 import YABOBFeaturesImage from "../../public/YABOB_Features.png"
 import ExpandableImage from '@/components/ui/expandable-image'
-import TextBoxList from '@/components/ui/text-box-list'
+import TagList from '@/components/ui/tag-list'
 
 const YABOBTitle = () => {
   return (
@@ -57,7 +57,7 @@ const YABOBSupportDescription = () => {
             </div>
 
             <div className="font-semibold text-sm mt-4 flex flex-wrap gap-1 justify-center">
-                <TextBoxList items={[
+                <TagList items={[
                     "TypeScript",
                     "Node.js",
                     "Discord.js",

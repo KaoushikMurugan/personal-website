@@ -2,7 +2,7 @@ import React from 'react'
 import { TimelineElement } from './types'
 import { SocialIcon } from '@/components/ui/social-icons'
 import { AccentText } from "@/components/ui/accent-text"
-import TextBoxList from '@/components/ui/text-box-list'
+import TagList from '@/components/ui/tag-list'
 
 const F1TenthTitle = () => {
   return (
@@ -56,7 +56,7 @@ const F1TenthSupportDescription = () => {
             </div>
 
             <div className="font-semibold text-sm mt-4 flex flex-wrap gap-1 justify-center">
-                <TextBoxList items={[
+                <TagList items={[
                     "ROS2",
                     "Docker",
                     "Python",

@@ -1,7 +1,7 @@
 import React from 'react'
 import { TimelineElement } from './types'
 import { AccentText } from "@/components/ui/accent-text"
-import TextBoxList from '@/components/ui/text-box-list'
+import TagList from '@/components/ui/tag-list'
 
 const CSTutoringTitle = () => {
   return (
@@ -43,7 +43,7 @@ const CSTutoringSupportDescription = () => {
             </div>
 
             <div className="font-semibold text-sm mt-4 flex flex-wrap gap-1 justify-center">
-                <TextBoxList items={[
+                <TagList items={[
                     "Leadership",
                     "Communication",
                     "Mentoring",
