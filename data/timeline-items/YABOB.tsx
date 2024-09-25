@@ -1,7 +1,7 @@
 import React from 'react'
 import { TimelineElement } from './types'
 import Image from 'next/image'
-import { SocialIcon } from '@/components/ui/social-icons' // Correct import for SocialIcon
+import { SocialIcon } from '@/components/ui/social-icons'
 import { AccentText } from "@/components/ui/accent-text"
 import YABOBFeaturesImage from "../../public/YABOB_Features.png"
 import ExpandableImage from '@/components/ui/expandable-image'
