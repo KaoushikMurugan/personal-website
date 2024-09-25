@@ -9,11 +9,12 @@ export default function Home() {
     <main className="relative bg-cyan-100 dark:bg-cyan-999 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
         <Hero />
-        <ProgrammingIconsRibbon />
-        <Grid />
-        {/* add some padding to the bottom */}
+        <Grid/>
         <div className="h-20" />
+        <ProgrammingIconsRibbon />
+        {/* add some padding to the bottom */}
         <Timeline timelineItems={timelineElements}/>
+        <div className="h-10" />
       </div>
     </main>
   );
