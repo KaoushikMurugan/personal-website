@@ -11,3 +11,4 @@ resources:
 acternity-ui
 shadcn
 devicon
+bootstrap-icons

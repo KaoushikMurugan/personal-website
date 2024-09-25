@@ -47,10 +47,10 @@ const F1TenthSupportDescription = () => {
     return (
         <div className="align-middle">
             <div className="font-light text-lg space-y-2">
-                <p>Developer on <AccentText text="UC Davis F1Tenth&apos;s Computer Vision Team"/> for Senior Capstone.</p>
+                <p>Developer on <AccentText text="UC Davis F1Tenth&apos;s Computer Vision Team"/>, for Senior Capstone Project.</p>
                 <ul className="list-disc list-inside pl-4">
                     <li key="50001">Implemented <AccentText text="SLAM, race-line optimization, and path-following (pure-pursuit)"/></li>
-                    <li key="50002">Integrated obstacle avoidance algorithms, <AccentText text="reducing collision rates by 5%"/></li>
+                    <li key="50002">Integrated obstacle avoidance algorithms, <AccentText text="reducing collision rate to 5%"/></li>
                     <li key="50003">Utilized Docker for simulations and testing</li>
                 </ul>
             </div>

@@ -41,7 +41,7 @@ const YABOBSupportTitle = () => {
                 March 2022 - Present
             </div>
             <i className="font-normal text-xl text-cyan-500">
-                Lead Developer
+                Project Lead / Developer
             </i> 
             <br />
         </div>
