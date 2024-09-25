@@ -13,7 +13,7 @@ const Timeline = ({
   timelineItems: TimelineElement[]
 }) => {
 
-  const line_color = 'bg-violet-400'
+  const line_color = 'bg-amber-400 dark:bg-amber-600'
   const defaultRowHeight = 28
   const defaultColumnWidth = 36
   const defaultMobileColumnWidth = 56

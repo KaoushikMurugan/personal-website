@@ -34,7 +34,7 @@ const Connect4SupportTitle = () => {
             <div className="font-extralight text-3xl">
                 June 2023
             </div>
-            <i className="font-normal text-xl">
+            <i className="font-normal text-xl text-cyan-500">
                 Developer [Course Project]
             </i> 
             <br />

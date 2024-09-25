@@ -12,20 +12,15 @@ const Hero = () => {
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
-          fill="white"
-        />
-        <Spotlight
-          className="h-[80vh] w-[50vw] top-10 left-full"
-          fill="purple"
+          fill="#04b8ff"
         />
         <Spotlight 
             className="left-80 top-28 h-[80vh] w-[50vw]" 
-            fill="blue"
+            fill="#8adeff"
         />
       </div>
-
       <WavyBackground 
-        backgroundFill="#000319" 
+        backgroundFill="#001923" // get color from tailwind.config.ts cyan-999. can't find a way to import it yet
         speed="slow" 
         waveWidth={50} 
         blur={10} 
@@ -51,11 +46,11 @@ const Hero = () => {
                 "from-cyan-400 to-teal-300",
                 "from-teal-300 to-cyan-400"]}
             />
-            <p className = "text-center text-xl">
+            <p className = "text-center text-xl text-cyan-100">
               Welcome to my portfolio website!
             </p>
 
-            <div className="h-10"/>
+            <div className="h-4"/>
             <a href="#timeline">
               <MagicButton 
                 title="Show My Work"
@@ -64,23 +59,20 @@ const Hero = () => {
               />
             </a>
             <div className="h-10"/>
-            <div className="flex flex-col sm:flex-row relative justify-center items-center gap-10 text-5xl">
+            <div className="flex flex-col sm:flex-row relative justify-center items-center gap-10 text-5xl dark:text-amber-400">
               <span className="text-3xl">Connect with me!</span>
-              <div className="flex sm:flex-row gap-8">
+              <div className="flex sm:flex-row gap-8 dark:text-amber-100">
                 <SocialIcon 
                   platform="linkedin" 
                   link="https://www.linkedin.com/in/kaoushikmurugan/" 
-                  className="text-neutral-300"
                 />
                 <SocialIcon 
                   platform="github" 
                   link="https://github.com/KaoushikMurugan" 
-                  className="text-neutral-300"
                 />
                 <SocialIcon 
                   platform="email"
                   link="mailto:kaoushikmurugan@gmail.com?&subject=Hello%20Kaoushik!"
-                  className="text-neutral-300"
                 />
               </div>
             </div>

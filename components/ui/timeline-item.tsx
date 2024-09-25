@@ -47,7 +47,7 @@ export const TimelineBaseItem: React.FC<TimelineBaseItemProps> = ({
         </div>
         <div
           className={cn(
-            "font-sans text-neutral-600 dark:text-neutral-300 leading-relaxed flex-grow",
+            "leading-relaxed flex-grow",
             descriptionClassName
           )}
         >
@@ -71,8 +71,8 @@ export const TimelineItem: React.FC<TimelineItemProps> = (timelineItemProps) => 
   return (
     <TimelineBaseItem 
       {...timelineItemProps}
-      rootClassName = "dark:bg-indigo-950 bg-indigo-300"
-      titleClassName = "text-3xl text-purple"
+      rootClassName = "dark:bg-cyan-950 bg-cyan-300"
+      titleClassName = "text-3xl text-cyan-400"
       descriptionClassName = "font-semibold text-lg space-y-2 flex items-center justify-center align-middle"
     />
   );
@@ -82,9 +82,9 @@ export const TimelineSupport: React.FC<TimelineItemProps> = (timelineItemProps) 
   return (
     <TimelineBaseItem 
       {...timelineItemProps}
-      rootClassName = "dark:bg-black bg-white dark:border-white/[0.2] border-red-500 border border-transparent"
-      titleClassName = "group-hover/bento:text-indigo-600 text-neutral-600 dark:text-neutral-200 text-2xl py-2"
-      descriptionClassName = "font-normal text-xs"
+      rootClassName = "dark:bg-cyan-990 bg-white dark:border-cyan-200/[0.25] border-red-500 border border-transparent"
+      titleClassName = "group-hover/bento:text-amber-500 text-neutral-600 dark:text-cyan-200 text-2xl py-2"
+      descriptionClassName = "font-normal font-sans text-neutral-600 dark:text-cyan-200/[0.8] text-xs"
     />
   );
 };
