@@ -12,9 +12,8 @@ export default function Home() {
         <Grid/>
         <div className="h-20" />
         <ProgrammingIconsRibbon />
-        {/* add some padding to the bottom */}
-        <Timeline timelineItems={timelineElements}/>
         <div className="h-10" />
+        <Timeline timelineItems={timelineElements} lineClassName="bg-amber-400 dark:bg-amber-600"/>
       </div>
     </main>
   );

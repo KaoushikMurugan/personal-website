@@ -4,16 +4,19 @@ import React, { useEffect, useState } from 'react'
 import { TimelineItem, TimelineSupport } from './timeline-item'
 import { cn } from '@/lib/utils';
 import { TimelineElement } from '@/data/timeline-items/types';
+import { ClassValue } from 'clsx';
 
 const Timeline = ({
   className,
-  timelineItems
+  timelineItems,
+  lineClassName,
 }: {
   className?: string;
   timelineItems: TimelineElement[]
+  lineClassName?: ClassValue;
 }) => {
 
-  const line_color = 'bg-amber-400 dark:bg-amber-600'
+  const line_color = lineClassName ?? 'bg-black dark:bg-white'
   const defaultRowHeight = 28
   const defaultColumnWidth = 36
   const defaultMobileColumnWidth = 56
@@ -62,7 +65,8 @@ const Timeline = ({
           className
         )}
       >
-        {
+        { // ! key warning is due to this block of code
+          // TODO: fix it
           mobile
           ? timelineItems.map((item, index) => RightIntentItem(item))
           : (
