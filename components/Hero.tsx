@@ -40,7 +40,7 @@ const Hero = () => {
             {/* <h2 className="uppercase tracking-widest text-xs text-center dark:text-blue-100 text-purple-900 max-w-80">
             </h2> */}
             <TextGenerateEffect 
-              className = "text-center text-[40px] md:text-5xl; lg:text-7xl drop-shadow-lg shadow-slate-300"
+              className = "text-center text-[40px] md:text-5xl; lg:text-7xl"
               words = "Kaoushik Murugan"
               duration = {1.0}
               colorGradient = {[
