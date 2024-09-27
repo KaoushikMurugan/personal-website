@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { ClassValue } from "clsx";
 
 export const TextGenerateEffect = ({
   words,
@@ -14,7 +15,7 @@ export const TextGenerateEffect = ({
   className?: string;
   filter?: boolean;
   duration?: number;
-  colorGradient?: string[];
+  colorGradient?: ClassValue[];
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
