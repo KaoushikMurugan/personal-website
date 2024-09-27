@@ -39,8 +39,10 @@ const Hero = () => {
           <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
             {/* <h2 className="uppercase tracking-widest text-xs text-center dark:text-blue-100 text-purple-900 max-w-80">
             </h2> */}
+            {/* bg-[radial-gradient] adds the shadow/bluring behind the name text */}
+            {/* TODO: try to make the transition in the gradient less noticible */}
             <TextGenerateEffect 
-              className = "text-center text-[40px] md:text-5xl; lg:text-7xl"
+              className = "text-center text-[40px] p-12 md:text-5xl lg:text-7xl bg-[radial-gradient(closest-side,_theme(colors.cyan.999)88,_theme(colors.cyan.999)88,transparent)]"
               words = "Kaoushik Murugan"
               duration = {1.0}
               colorGradient = {[
