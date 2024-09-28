@@ -5,6 +5,7 @@ import { TimelineItem, TimelineSupport } from './timeline-item'
 import { cn } from '@/lib/utils';
 import { TimelineElement } from '@/data/timeline-items/types';
 import { ClassValue } from 'clsx';
+import SectionTitle from './section-title';
 
 const Timeline = ({
   className,
@@ -53,7 +54,8 @@ const Timeline = ({
 
   return (
 
-    <section id="timeline">
+    <section id="experience">
+      <SectionTitle title="Experience" />
       <div className="h-10" /> {/* Spacer */}
       <div
         style={{ 

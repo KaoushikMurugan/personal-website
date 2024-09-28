@@ -1,6 +1,7 @@
 import Grid from "@/components/grid";
 import Hero from "@/components/hero";
 import ProgrammingIconsRibbon from "@/components/programming-icons-ribbon";
+import SectionTitle from "@/components/ui/section-title";
 import Timeline from "@/components/ui/timeline";
 import { timelineElements } from "@/data";
 
@@ -10,9 +11,7 @@ export default function Home() {
       <div className="max-w-7xl w-full">
         <Hero />
         <Grid/>
-        <div className="h-20" />
         <ProgrammingIconsRibbon />
-        <div className="h-10" />
         <Timeline timelineItems={timelineElements} lineClassName="bg-amber-400 dark:bg-amber-600"/>
       </div>
     </main>

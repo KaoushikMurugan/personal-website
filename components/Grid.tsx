@@ -1,10 +1,12 @@
 import React from 'react'
 import { BentoGrid, BentoGridItem } from './ui/bento-grid'
 import { gridItems } from '@/data'
+import SectionTitle from './ui/section-title'
 
 const Grid = () => {
   return (
-    <section id="about">
+    <section id="abouts">
+      <SectionTitle title="About Myself" />
       <BentoGrid>
         {
           gridItems.map((item, index) => (
@@ -17,6 +19,7 @@ const Grid = () => {
           ))
         }
       </BentoGrid>
+      <div className="h-10" /> {/* Spacer */}
     </section>
   )
 }

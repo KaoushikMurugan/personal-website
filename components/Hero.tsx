@@ -54,7 +54,7 @@ const Hero = () => {
             </p>
 
             <div className="h-4"/>
-            <a href="#timeline">
+            <a href="#experience">
               <MagicButton 
                 title="Show My Work"
                 icon={<FaLocationArrow />}

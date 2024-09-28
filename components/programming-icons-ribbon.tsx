@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import { cn } from "@/lib/utils";
 import * as Icons from '@/components/programming-icons';
+import SectionTitle from './ui/section-title';
 
 // Modified/Repurposed from https://ui.aceternity.com/components/infinite-moving-cards
 
@@ -111,7 +112,8 @@ const ProgrammingIconsRibbonStack = (): JSX.Element => {
   }
 
   return (
-    <>
+    <section id="languages-tools">
+      <SectionTitle title="Languages & Tools" />
       <ProgrammingIconsRibbon direction="left" speed="normal">
         <Icons.Python {...iconProps} />
         <Icons.CLang {...iconProps} />
@@ -147,7 +149,7 @@ const ProgrammingIconsRibbonStack = (): JSX.Element => {
         <Icons.RaspberryPi {...iconProps} />
         <Icons.ROS {...wideIconProps} />
       </ProgrammingIconsRibbon>
-    </>
+    </section>
 
   )
 }
