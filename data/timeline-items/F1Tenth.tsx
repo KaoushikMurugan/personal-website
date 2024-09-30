@@ -16,18 +16,17 @@ const F1TenthDescription = () => {
     return (
       <div className="w-full max-w-2xl mx-auto aspect-video rounded-lg overflow-hidden">
         <iframe
-          className="w-full h-full"
-          src="https://www.youtube.com/embed/IEvM3ufXBYI"
-          title="One-Tenth Scale Autonomous Racecar Demo - UC Davis ECS Capstone"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-          rel="0"
-          
+            className="w-full h-full"
+            src="https://www.youtube.com/embed/IEvM3ufXBYI"
+            title="One-Tenth Scale Autonomous Racecar Demo - UC Davis ECS Capstone"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            rel="0"
         ></iframe>
       </div>
     );
-  };
+};
 
 const F1TenthSupportTitle = () => {
     return (
