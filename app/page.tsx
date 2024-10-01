@@ -1,5 +1,5 @@
-import Grid from "@/components/grid";
-import Hero from "@/components/hero";
+import Grid from "@/components/grid1";
+import Hero from "@/components/hero1";
 import ProgrammingIconsRibbon from "@/components/programming-icons-ribbon";
 import SectionTitle from "@/components/ui/section-title";
 import Timeline from "@/components/ui/timeline";
