@@ -31,7 +31,7 @@ const Connect4Description = () => {
 const Connect4SupportTitle = () => {
     return (
         <div>
-            <div className="font-extralight text-3xl">
+            <div className="font-medium text-3xl">
                 Developer [Course Project]
             </div>
             <i className="font-normal text-xl text-cyan-500">

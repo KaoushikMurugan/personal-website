@@ -31,7 +31,7 @@ const F1TenthDescription = () => {
 const F1TenthSupportTitle = () => {
     return (
         <div>
-            <div className="font-extralight text-3xl">
+            <div className="font-medium text-3xl">
                 Developer [Senior Capstone]
             </div>
             <i className="font-normal text-xl text-cyan-500">

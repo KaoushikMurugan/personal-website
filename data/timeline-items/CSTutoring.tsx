@@ -22,7 +22,7 @@ const CSTutoringDescription = () => {
 const CSTutoringSupportTitle = () => {
     return (
         <div>
-            <div className="font-extralight text-3xl">
+            <div className="font-medium text-3xl">
                 VP of Software Engineering and Tutor
             </div>
             <i className="font-normal text-xl text-cyan-500">

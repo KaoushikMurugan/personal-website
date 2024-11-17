@@ -37,7 +37,7 @@ const YABOBDescription = () => {
 const YABOBSupportTitle = () => {
     return (
         <div>
-            <div className="font-extralight text-3xl">
+            <div className="font-medium text-3xl">
                 Project Lead / Developer
             </div>
             <i className="font-normal text-xl text-cyan-500">
