@@ -32,10 +32,10 @@ const Connect4SupportTitle = () => {
     return (
         <div>
             <div className="font-extralight text-3xl">
-                June 2023
+                Developer [Course Project]
             </div>
             <i className="font-normal text-xl text-cyan-500">
-                Developer [Course Project]
+                June 2023
             </i> 
             <br />
         </div>

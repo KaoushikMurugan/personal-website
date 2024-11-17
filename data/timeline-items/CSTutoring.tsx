@@ -23,10 +23,10 @@ const CSTutoringSupportTitle = () => {
     return (
         <div>
             <div className="font-extralight text-3xl">
-                March 2022 - June 2024
+                VP of Software Engineering and Tutor
             </div>
             <i className="font-normal text-xl text-cyan-500">
-                VP of Software Engineering and Tutor
+                March 2022 - June 2024
             </i> 
             <br />
         </div>

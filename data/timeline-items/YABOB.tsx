@@ -38,10 +38,10 @@ const YABOBSupportTitle = () => {
     return (
         <div>
             <div className="font-extralight text-3xl">
-                March 2022 - Present
+                Project Lead / Developer
             </div>
             <i className="font-normal text-xl text-cyan-500">
-                Project Lead / Developer
+                March 2022 - Present
             </i> 
             <br />
         </div>

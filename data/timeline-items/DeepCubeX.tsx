@@ -33,10 +33,10 @@ const DeepCubeXSupportTitle = () => {
     return (
         <div>
             <div className="font-extralight text-3xl">
-                March 2024 - Present
+                AI/ML Researcher at Davidson Lab, UC Davis
             </div>
             <i className="font-normal text-xl text-cyan-500">
-                AI/ML Researcher at Davidson Lab, UC Davis
+                March 2024 - Present
             </i> 
             <br />
         </div>

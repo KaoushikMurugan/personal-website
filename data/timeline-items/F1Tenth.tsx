@@ -32,10 +32,10 @@ const F1TenthSupportTitle = () => {
     return (
         <div>
             <div className="font-extralight text-3xl">
-                January 2024 - June 2024
+                Developer [Senior Capstone]
             </div>
             <i className="font-normal text-xl text-cyan-500">
-                Developer [Senior Capstone]
+                January 2024 - June 2024
             </i> 
             <br />
         </div>
