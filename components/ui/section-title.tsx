@@ -34,7 +34,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({ title, className }) => {
     <div ref={ref} className={cn("text-center overflow-hidden", className)}>
       {/* Title with gradient and glow */}
       <motion.h2 
-        className="text-5xl h-14 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 via-cyan-400 to-cyan-600
+        className="text-3xl md:text-5xl h-14 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 via-cyan-400 to-cyan-600
         shadow-none outline-none"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
