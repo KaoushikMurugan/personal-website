@@ -10,7 +10,7 @@ const ScrollDownIndicator: React.FC = () => {
 
     return (
         <motion.div 
-            className="absolute bottom-[1rem] w-full text-center" 
+            className="absolute bottom-[2rem] w-full text-center" 
             style={{ opacity, filter: blur }}
             animate={{
                 y: [10, 0, 10],
