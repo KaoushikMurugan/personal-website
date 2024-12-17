@@ -17,7 +17,7 @@ const Hero = () => {
           {/* bg-[radial-gradient] adds the shadow/bluring behind the name text */}
           {/* TODO: try to make the transition in the gradient less noticible */}
           <TextGenerateEffect 
-            className = "text-center text-[40px] p-12 md:text-5xl lg:text-7xl bg-[radial-gradient(closest-side,_theme(colors.cyan.999)88,_theme(colors.cyan.999)88,transparent)]"
+            className = "text-center p-12 text-5xl bg-[radial-gradient(closest-side,_theme(colors.cyan.999)88,_theme(colors.cyan.999)88,transparent)]"
             words = "Kaoushik Murugan"
             duration = {1.0}
             colorGradient = {[
@@ -28,7 +28,7 @@ const Hero = () => {
             Welcome to my portfolio website!
           </p>
 
-          <div className="h-4"/>
+          <div className="h-4 md:h-8"/>
           <a href="#experience">
             <MagicButton 
               title="Show My Work"
@@ -36,7 +36,7 @@ const Hero = () => {
               position="right"
             />
           </a>
-          <div className="h-10"/>
+          <div className="h-8 md:h-14"/>
           <div className="flex flex-col sm:flex-row relative justify-center items-center gap-10 text-5xl dark:text-amber-400">
             <span className="text-3xl">Connect with me!</span>
             <div className="flex sm:flex-row gap-8 dark:text-amber-100">
