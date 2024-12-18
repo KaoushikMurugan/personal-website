@@ -12,7 +12,7 @@ const AdaptabilityTitle = () => {
 const AdaptabilityDescription = () => {
     return (
         <div>
-            I am a <AccentText text="quick learner"/> and I am always ready to adapt to new environments and challenges. 
+            I love <AccentText text="learning new things"/> and I am always ready to adapt to new environments and challenges. I care about understanding the <AccentText text="foundations"/> of a concept and building <AccentText text="intuition"/> around it.
         </div>
     )
 }

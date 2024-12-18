@@ -12,7 +12,7 @@ const CollaborationTitle = () => {
 const CollaborationDescription = () => {
     return (
         <div>
-            Either as a <AccentText text="team member or a leader"/>, I always care about ensuring a <AccentText text="positive and productive environment"/> for everyone involved.
+            Either as <AccentText text="a team member or a leader"/>, I always care about ensuring a <AccentText text="positive and productive environment"/> for everyone involved.
         </div>
     )
 }

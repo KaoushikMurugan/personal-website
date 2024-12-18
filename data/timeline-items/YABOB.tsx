@@ -60,6 +60,7 @@ const YABOBSupportDescription = () => {
                 <TagList items={[
                     "TypeScript",
                     "Node.js",
+                    "Github",
                     "Discord.js",
                     "Firebase",
                     "Google Cloud",
