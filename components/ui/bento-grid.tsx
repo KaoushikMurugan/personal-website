@@ -49,7 +49,7 @@ export const BentoGridItem: React.FC<BentoGridItemProps> = ({
         <div className="font-sans font-bold text-neutral-600 dark:text-cyan-300 mb-2 mt-2 text-2xl">
           {title}
         </div>
-        <div className="font-sans font-normal text-sm text-neutral-600 dark:text-cyan-200/[0.8]">
+        <div className="font-sans font-normal text-md text-neutral-600 dark:text-cyan-200/[0.8]">
           {description}
         </div>
       </div>
