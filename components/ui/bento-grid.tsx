@@ -46,7 +46,7 @@ export const BentoGridItem: React.FC<BentoGridItemProps> = ({
       {header}
       <div className=" transition duration-200">
         {icon}
-        <div className="font-sans font-bold text-neutral-600 dark:text-cyan-300 mb-2 mt-2 text-2xl">
+        <div className="font-sans font-bold text-neutral-600 dark:text-cyan-300 mb-2 mt-2 text-3xl">
           {title}
         </div>
         <div className="font-sans font-normal text-lg text-neutral-600 dark:text-cyan-200/[0.8]">
