@@ -22,7 +22,7 @@ export const SocialIcon: React.FC<SocialIconProps> = ({ platform, link, classNam
           <i className="bi bi-envelope-open-fill hidden group-hover:inline"></i>
         </div>;
       default:
-        return <i className="bi bi-link"></i>;
+        return <i className="bi bi-box-arrow-up-right text-4xl"></i>;
     }
   };
 
