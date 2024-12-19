@@ -23,7 +23,7 @@ const ScrollDownIndicator: React.FC = () => {
                 repeatDelay: 0.5,
             }}
         >
-            <p className="text-white text-lg">
+            <p className="text-cyan-400 text-lg">
                 Scroll Down
                 <br />
                 <span className="text-3xl">▾</span>
