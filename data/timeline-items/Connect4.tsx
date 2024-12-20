@@ -47,11 +47,7 @@ const Connect4SupportDescription = () => {
         <div>
             <div className="font-light text-lg space-y-2">
                 <p>Built an online multiplayer Connect-4 game on <AccentText text="TI CC3200 (32-bit ARM)"/> boards with an <AccentText text="AWS EC2"/> server managing game state.</p>
-                <ul className="list-disc list-inside pl-4">
-                    <li key="40001">Designed <AccentText text="GPIO"/> input circuits using IR sensors and <AccentText text="SPI"/> for OLED display</li>
-                    <li key="40002">Used <AccentText text="AWS IoT"/> for board communication via <AccentText text="MQTT and REST"/></li>
-                </ul>
-                <p>Programmed clients in <AccentText text="Embedded C"/> and the server in TypeScript.</p>
+                <p>Designed <AccentText text="GPIO"/> input circuits using IR sensors and <AccentText text="SPI"/> for OLED display. Used <AccentText text="AWS IoT"/> for board communication via <AccentText text="MQTT and REST"/>. Programmed clients in <AccentText text="Embedded C"/> and the server in TypeScript.</p>
             </div>
 
             <div className="font-semibold text-sm mt-4 flex flex-wrap gap-1 justify-center">
