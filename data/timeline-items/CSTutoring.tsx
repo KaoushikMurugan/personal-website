@@ -2,6 +2,8 @@ import React from 'react'
 import { TimelineElement } from './types'
 import { AccentText } from "@/components/ui/accent-text"
 import TagList from '@/components/ui/tag-list'
+import CSTutoringLogo from "../../public/CSTutoringLogo.svg"
+import Image from 'next/image'
 
 const CSTutoringTitle = () => {
   return (
@@ -14,7 +16,14 @@ const CSTutoringTitle = () => {
 const CSTutoringDescription = () => {
     return (
         <div className="">
-            {/* TBD */}
+            <div className="flex justify-center align-middle">
+                <a href="https://cstutoringatdavis.com/" target="_blank" rel="noopener noreferrer">
+                <Image
+                    src={CSTutoringLogo}
+                    alt="CSTutoring Logo"
+                    className="rounded-lg w-full max-w-[300px] object-contain"
+                /></a>
+            </div>
         </div>
     )
 }
