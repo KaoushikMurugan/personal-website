@@ -1,4 +1,5 @@
 import Background from "@/components/background";
+import Footer from "@/components/footer";
 import Grid from "@/components/grid";
 import Hero from "@/components/hero";
 import ProgrammingIconsRibbon from "@/components/programming-icons-ribbon";
@@ -18,6 +19,7 @@ export default function Home() {
         <ProgrammingIconsRibbon />
         <Timeline timelineItems={timelineElements} lineClassName="bg-amber-400 dark:bg-amber-600" />
       </div>
+      <Footer />
     </main>
   );
 }
