@@ -1,4 +1,4 @@
-// Icons from Devicon
+// Icons from Devicon https://devicon.dev/
 
 export {default as CLang} from './c';
 export {default as CPlusPlus} from './cplusplus';

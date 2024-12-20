@@ -4,6 +4,8 @@ import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { ClassValue } from "clsx";
 
+// from https://ui.aceternity.com/components/text-generate-effect
+
 export const TextGenerateEffect = ({
   words,
   className,

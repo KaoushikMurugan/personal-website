@@ -1,5 +1,7 @@
 import React from 'react'
 
+// from https://ui.aceternity.com/components/tailwindcss-buttons
+
 const MagicButton = ({
   title,
   icon,
