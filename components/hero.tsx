@@ -23,7 +23,7 @@ const Hero = () => {
               "from-teal-300 to-cyan-400"]}
           />
           <p className = "text-center text-xl text-cyan-100">
-            Welcome to my portfolio website!
+          AI/ML Researcher and Recent UC Davis Graduate, driven by a passion for critical thinking and exploring innovative ideas
           </p>
 
           <div className="h-4 md:h-8"/>
