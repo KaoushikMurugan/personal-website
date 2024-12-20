@@ -1,14 +1,13 @@
 # Personal Website
-
 Made using:
 
-next.js
-typescript
-tailwindcss
-framer-motion
+Next.js
+TypeScript
+Tailwind CSS
+Framer Motion
 
-resources:
-acternity-ui
-shadcn
-devicon
-bootstrap-icons
+Credits to [bootstrap-icons](https://icons.getbootstrap.com/) for icons and [devicons](https://devicon.dev/) for logos.
+
+Some UI adapted / inspired from [acternity-ui](https://ui.aceternity.com/components) and [shadcn](https://ui.shadcn.com/) (credits can be found in files)
+
+I began the project following [this video](https://www.youtube.com/watch?v=FTH6Dn3AyIQ), and took it in my own direction shortly after starting.
