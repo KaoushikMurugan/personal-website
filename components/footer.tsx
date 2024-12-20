@@ -8,13 +8,13 @@ const Footer = () => {
         <div className="flex w-screen bg-cyan-995">
             {/* Footer Content */}
             <div className="flex flex-col w-full max-w-7xl p-4 mx-auto text-cyan-950 dark:text-cyan-200 text-center gap-5">
+                <p>Copyright &copy; {new Date().getFullYear()} Kaoushik Murugan - All rights reserved</p>
+                
                 <p>Built with Next.js, Tailwind CSS, and Framer Motion in TypeScript</p>
 
                 <p>Source code and credits can be found on my 
                 <a href="https://github.com/KaoushikMurugan/personal-website"
                     target="_blank" rel="noopener noreferrer"> <u>GitHub</u></a></p>
-
-                <p>Copyright &copy; {new Date().getFullYear()} Kaoushik Murugan - All rights reserved</p>
 
                 <div className="flex justify-center space-x-4"/>
             </div>
