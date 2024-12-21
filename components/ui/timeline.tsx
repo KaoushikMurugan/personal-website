@@ -6,6 +6,8 @@ import { cn } from '@/lib/utils';
 import { TimelineElement } from '@/data/timeline-items/types';
 import { ClassValue } from 'clsx';
 import SectionTitle from './section-title';
+import { IoDocumentText } from "react-icons/io5";
+import MagicButton from '../buttons/magic-button';
 
 const Timeline = ({
   className,
@@ -56,7 +58,17 @@ const Timeline = ({
 
     <section id="experience">
       <SectionTitle title="Experience" />
-      <div className="h-10" /> {/* Spacer */}
+      {/* <div className="h-10" /> */}
+      <span className="flex justify-center pt-5 pb-20">
+        <a href="/Kaoushik_Murugan_Resume.pdf" target="_blank" rel="noreferrer">
+          <MagicButton 
+            title="Get my Resume"
+            icon={<IoDocumentText className='text-xl'/>}
+            position="right"
+          />
+        </a>
+      </span>
+        
       <div
         style={{ 
           gap: `${defaultRowGap}rem`,
