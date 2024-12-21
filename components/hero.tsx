@@ -1,4 +1,6 @@
-import React from 'react'
+"use client";
+
+import React, { useRef } from 'react'
 import { TextGenerateEffect } from './ui/text-generate-effect'
 import MagicButton from './buttons/magic-button'
 import { FaLocationArrow } from 'react-icons/fa6'
@@ -7,9 +9,10 @@ import ScrollDownIndicator from './ui/scroll-indicator'
 import CircleIcon from './ui/circle-image-icon'
 
 const Hero = () => {
+  const heroRef = useRef<HTMLDivElement>(null);
   return (
-    <div className="relative pb-18 pt-10 md:pt-20 h-screen">
-      <div className="flex justify-center relative my-[2rem] z-10">
+    <div ref={heroRef} className="relative pb-18 pt-10 md:pt-20 min-h-screen">
+      <div className="flex justify-center relative pt-[2rem] pb-[6rem] z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           {/* <h2 className="uppercase tracking-widest text-xs text-center dark:text-blue-100 text-purple-900 max-w-80">
           </h2> */}
@@ -61,7 +64,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <ScrollDownIndicator />
+      <ScrollDownIndicator heroRef={heroRef}/>
     </div>
   )
 }
