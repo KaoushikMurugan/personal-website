@@ -8,8 +8,8 @@ import CircleIcon from './ui/circle-image-icon'
 
 const Hero = () => {
   return (
-    <div className="relative pb-18 pt-20 h-screen">
-      <div className="flex justify-center relative my-[8rem] z-10">
+    <div className="relative pb-18 pt-10 md:pt-20 h-screen">
+      <div className="flex justify-center relative my-[2rem] z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           {/* <h2 className="uppercase tracking-widest text-xs text-center dark:text-blue-100 text-purple-900 max-w-80">
           </h2> */}
@@ -22,14 +22,14 @@ const Hero = () => {
             className="border-cyan-500"
           />
           <TextGenerateEffect 
-            className = "text-center p-12 text-5xl bg-[radial-gradient(closest-side,_theme(colors.cyan.999)88,_theme(colors.cyan.999)88,transparent)]"
+            className = "text-center p-2 xl:p-8 text-6xl sm:text-7xl bg-[radial-gradient(closest-side,_theme(colors.cyan.999)88,_theme(colors.cyan.999)88,transparent)]"
             words = "Kaoushik Murugan"
             duration = {1.0}
             colorGradient = {[
               "from-cyan-400 to-teal-300",
               "from-teal-300 to-cyan-400"]}
           />
-          <p className = "text-center text-xl text-cyan-100">
+          <p className = "text-center text-base md:text-xl text-cyan-100">
           AI/ML Researcher and Recent UC Davis Graduate, driven by a passion for critical thinking and exploring innovative ideas
           </p>
 
@@ -42,8 +42,8 @@ const Hero = () => {
             />
           </a>
           <div className="h-8 md:h-14"/>
-          <div className="flex flex-col sm:flex-row relative justify-center items-center gap-10 text-5xl dark:text-amber-400">
-            <span className="text-3xl">Connect with me!</span>
+          <div className="flex flex-col sm:flex-row relative justify-center items-center gap-4 sm:gap-10 text-5xl dark:text-amber-400">
+            <span className="text-xl sm:text-2xl md:text-3xl">Connect with me!</span>
             <div className="flex sm:flex-row gap-8 dark:text-amber-100">
               <SocialIcon 
                 platform="linkedin" 
