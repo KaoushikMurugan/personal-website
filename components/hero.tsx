@@ -4,6 +4,7 @@ import MagicButton from './buttons/magic-button'
 import { FaLocationArrow } from 'react-icons/fa6'
 import { SocialIcon } from './ui/social-icons'
 import ScrollDownIndicator from './ui/scroll-indicator'
+import CircleIcon from './ui/circle-image-icon'
 
 const Hero = () => {
   return (
@@ -14,6 +15,12 @@ const Hero = () => {
           </h2> */}
           {/* bg-[radial-gradient] adds the shadow/bluring behind the name text */}
           {/* TODO: try to make the transition in the gradient less noticible */}
+          <CircleIcon
+            src = "/pfp.png"
+            alt = "Kaoushik Murugan"
+            radius={{ base: '50px', md: '75px' }}
+            className="border-cyan-500"
+          />
           <TextGenerateEffect 
             className = "text-center p-12 text-5xl bg-[radial-gradient(closest-side,_theme(colors.cyan.999)88,_theme(colors.cyan.999)88,transparent)]"
             words = "Kaoushik Murugan"
