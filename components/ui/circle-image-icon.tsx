@@ -2,11 +2,11 @@
 
 import { cn } from '@/lib/utils';
 import { ClassValue } from 'clsx';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import React, { useEffect, useState } from 'react';
 
 interface CircleIconProps {
-  src: string;
+  src: StaticImageData;
   alt: string;
   radius?: { base: string; md: string };
   centerX?: number; // Horizontal center point (default: 0.5 for center)

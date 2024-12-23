@@ -7,6 +7,7 @@ import { FaLocationArrow } from 'react-icons/fa6'
 import { SocialIcon } from './ui/social-icons'
 import ScrollDownIndicator from './ui/scroll-indicator'
 import CircleIcon from './ui/circle-image-icon'
+import PFP from '../public/pfp.png'
 
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -19,7 +20,7 @@ const Hero = () => {
           {/* bg-[radial-gradient] adds the shadow/bluring behind the name text */}
           {/* TODO: try to make the transition in the gradient less noticible */}
           <CircleIcon
-            src = "/pfp.png"
+            src = {PFP}
             alt = "Kaoushik Murugan"
             radius={{ base: '50px', md: '75px' }}
             className="border-cyan-500"
