@@ -96,6 +96,7 @@ const Background: React.FC<BackgroundProps> = ({
             backgroundSize: `${dotScaling}px ${dotScaling}px`,
             filter: "blur(1px)",
             zIndex: 20,
+            willChange: "transform",
           }}
         />
       ) : (
