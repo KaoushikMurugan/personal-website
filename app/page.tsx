@@ -1,10 +1,9 @@
 import Background from "@/components/background";
+import Experience from "@/components/experience";
 import Footer from "@/components/footer";
 import Grid from "@/components/grid";
 import Hero from "@/components/hero";
 import ProgrammingIconsRibbon from "@/components/programming-icons-ribbon";
-import Timeline from "@/components/ui/timeline";
-import { timelineElements } from "@/data";
 
 export default function Home() {
   return (
@@ -17,7 +16,7 @@ export default function Home() {
         <Hero />
         <Grid />
         <ProgrammingIconsRibbon />
-        <Timeline timelineItems={timelineElements} lineClassName="bg-amber-400 dark:bg-amber-600" />
+        <Experience />
       </div>
       <Footer />
     </main>
