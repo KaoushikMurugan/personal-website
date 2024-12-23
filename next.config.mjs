@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: "export",
-    basePath: "/personal-website",
+    basePath: "/",
     images: {
         dangerouslyAllowSVG: true,
         remotePatterns: [
