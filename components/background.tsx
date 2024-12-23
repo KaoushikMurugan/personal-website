@@ -3,6 +3,18 @@
 import React, { useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
+/**
+ * Due to forced discrete scrolling in Safari when input is not a trackpad/touch device, disabling parallax effect for Safari.
+ */
+const isSafari = () => {
+  const ua = navigator.userAgent;
+  return (
+    ua.includes("Safari") &&
+    !ua.includes("Chrome") && // Exclude Chrome (also includes "Safari")
+    !ua.includes("Android") // Exclude Android WebView
+  );
+};
+
 interface BackgroundProps {
   dotScaling?: number; // Size of the dots (default: 256px)
   dotRadius?: number; // Radius of the dots (default: 8px)
@@ -86,7 +98,7 @@ const Background: React.FC<BackgroundProps> = ({
       ></div>
 
       {/* Dots - Conditional: Parallax Motion or Static */}
-      {isGPUAvailable ? (
+      {!isSafari() && isGPUAvailable ? (
         // GPU available: Render parallax dots
         <motion.div
           className="absolute inset-0 bg-repeat"
