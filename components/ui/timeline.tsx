@@ -34,7 +34,7 @@ const Timeline = ({
       // diving by 32 for rem factor
       const deltaW = (1400 - width) / 32;
       const mobileDeltaW = (1024 - width) / 32; 
-      // newHeight is a Continuous, inverse function of deltaW, within the domains of isMobile and !isMobile
+      // newHeight is a Continuous, inversely proportional function of deltaW, within the domains of isMobile and !isMobile
       const newHeight = isMobile 
         ? defaultRowHeight*(defaultMobileColumnWidth)/(defaultMobileColumnWidth - growthFactor * mobileDeltaW) 
         : width < 1400

@@ -8,7 +8,7 @@ import React, { useEffect, useState } from 'react';
 interface CircleIconProps {
   src: string;
   alt: string;
-  radius?: { base: string; md: string }; // Dynamic radius for responsive screens
+  radius?: { base: string; md: string };
   centerX?: number; // Horizontal center point (default: 0.5 for center)
   centerY?: number; // Vertical center point (default: 0.5 for center)
   className: ClassValue;

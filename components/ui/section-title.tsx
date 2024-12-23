@@ -1,4 +1,4 @@
-"use client";  // Ensure this is a client-side component
+"use client";
 
 import { cn } from '@/lib/utils'
 import { ClassValue } from 'clsx'

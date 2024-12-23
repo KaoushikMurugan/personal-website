@@ -12,8 +12,7 @@ const InterestsTitle = () => {
 const InterestsDescription = () => {
     return (
         <div>
-            From <AccentText text=" Machine Learning "/> to <AccentText text=" Game Development"/> to <AccentText text="Embedded Systems"/>, I am passionate about a wide range of low-level and high-level topics in Computer Science.
-            {/* For images, include icons for: embeded/hardware, website and game controller */}
+            I am passionate about a wide range of low-level and high-level topics in Computer Science, from <AccentText text=" Machine Learning "/> to <AccentText text=" Game Development"/> to <AccentText text="Embedded Systems"/>.
         </div>
     )
 }

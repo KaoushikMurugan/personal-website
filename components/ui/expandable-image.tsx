@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
+// because `props` already include required props for Image component
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -66,7 +67,7 @@ const ExpandableImage: React.FC<ExpandableImageProps> = (props) => {
             transition={{ duration: 0.3 }}
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Close Button (optional) */}
+            {/* Close Button */}
             <button
               className="absolute top-2 right-2 text-white text-3xl font-bold"
               onClick={handleOverlayClick}

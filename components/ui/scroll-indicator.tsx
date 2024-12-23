@@ -34,10 +34,8 @@ const ScrollDownIndicator: React.FC<ScrollDownIndicatorProps> = ({ heroRef }) =>
       observer.observe(observedElement);
     }
 
-    // Initial check
     updateVisibility();
 
-    // Cleanup observer
     return () => {
       if (observedElement) {
         observer.unobserve(observedElement);
