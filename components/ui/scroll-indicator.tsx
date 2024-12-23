@@ -63,7 +63,7 @@ const ScrollDownIndicator: React.FC<ScrollDownIndicatorProps> = ({ heroRef }) =>
       <p className="text-cyan-400 text-lg">
         Scroll Down
         <br />
-        <span className="text-3xl">▾</span>
+        <span><i className="bi bi-caret-down-fill"></i></span>
       </p>
     </motion.div>
   );
