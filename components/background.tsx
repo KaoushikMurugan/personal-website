@@ -6,7 +6,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 /**
  * Due to forced discrete scrolling in Safari when input is not a trackpad/touch device, disabling parallax effect for Safari.
  */
-const isSafari = () => {
+const isSafari = (): boolean => {
+  if (typeof navigator === "undefined") return false; // Return false on the server
   const ua = navigator.userAgent;
   return (
     ua.includes("Safari") &&
@@ -31,10 +32,11 @@ const Background: React.FC<BackgroundProps> = ({
   const { scrollY } = useScroll();
   const [viewportHeight, setViewportHeight] = useState<number>(0);
   const [isGPUAvailable, setIsGPUAvailable] = useState<boolean>(true);
+  const [isSafariBrowser, setIsSafariBrowser] = useState<boolean>(false);
 
   useEffect(() => {
     // GPU check using WebGL
-    function checkGPU() {
+    const checkGPU = () => {
       try {
         const canvas = document.createElement("canvas");
         const gl = canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
@@ -42,15 +44,18 @@ const Background: React.FC<BackgroundProps> = ({
       } catch {
         return false;
       }
-    }
+    };
 
     setIsGPUAvailable(checkGPU());
 
+    // Set the Safari browser detection
+    setIsSafariBrowser(isSafari());
+
     // Set viewport height and handle resize
-    setViewportHeight(window.innerHeight);
-    const handleResize = () => setViewportHeight(window.innerHeight);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    const updateViewportHeight = () => setViewportHeight(window.innerHeight);
+    updateViewportHeight();
+    window.addEventListener("resize", updateViewportHeight);
+    return () => window.removeEventListener("resize", updateViewportHeight);
   }, []);
 
   // Infinite parallax effect
@@ -98,8 +103,8 @@ const Background: React.FC<BackgroundProps> = ({
       ></div>
 
       {/* Dots - Conditional: Parallax Motion or Static */}
-      {!isSafari() && isGPUAvailable ? (
-        // GPU available: Render parallax dots
+      {!isSafariBrowser && isGPUAvailable ? (
+        // GPU available and not Safari: Render parallax dots
         <motion.div
           className="absolute inset-0 bg-repeat"
           style={{
@@ -112,7 +117,7 @@ const Background: React.FC<BackgroundProps> = ({
           }}
         />
       ) : (
-        // GPU not available: Render static background
+        // GPU not available or Safari: Render static background
         <div
           className="absolute inset-0 bg-repeat"
           style={{
