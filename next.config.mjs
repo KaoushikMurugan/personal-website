@@ -3,6 +3,7 @@ const nextConfig = {
     output: "export",
     basePath: "/personal-website",
     images: {
+        unoptimized: true,
         dangerouslyAllowSVG: true,
         remotePatterns: [
             {
